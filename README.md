@@ -40,7 +40,7 @@ Modern baseline implementations were independently reimplemented and behavior-au
 
 ## Scientific status
 
-The local publication gate was `PUBLICATION_SUFFICIENCY = FAIL` at release preparation time because the claims audit was conditional and venue-specific submission checks remained open. The repository preserves these limits and does not claim acceptance, a JCR quartile, or a universal leaderboard.
+The current local publication gate remains `PUBLICATION_SUFFICIENCY = FAIL` because venue-specific submission checks and author-controlled metadata remain open. The fresh manuscript claims audit is `PASS`; this does not certify acceptance, a JCR quartile, or a universal leaderboard. The repository preserves negative results, failed campaigns, and all scope limits.
 
 ## License
 

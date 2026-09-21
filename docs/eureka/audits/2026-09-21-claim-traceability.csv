@@ -1,0 +1,469 @@
+token_id,line,token,section,class,source,locator,rounded_match
+N0001,1,1,preamble,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0002,2,0.8,preamble,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0003,31,"1,000",preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0004,31,10,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0005,31,100,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0006,31,60,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0007,31,120,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0008,31,"1,080",preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0009,31,"2,700",preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0010,31,10,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0011,31,100,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0012,31,0.0061,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0013,31,0.0061,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0014,31,0.0611,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0015,31,0.0676,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0016,31,0.6491,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0017,31,0.0367,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0018,31,0.0031,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0019,31,0.0001,preamble,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0020,49,1,Introduction,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0021,51,"1,000",Introduction,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0022,51,10,Introduction,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0023,51,100,Introduction,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0024,71,10,Related work and positioning,bibliographic,paper/references.bib,citation metadata,YES
+N0025,71,100,Related work and positioning,bibliographic,paper/references.bib,citation metadata,YES
+N0026,71,10,Related work and positioning,bibliographic,paper/references.bib,citation metadata,YES
+N0027,71,100,Related work and positioning,bibliographic,paper/references.bib,citation metadata,YES
+N0028,71,10,Related work and positioning,bibliographic,paper/references.bib,citation metadata,YES
+N0029,71,100,Related work and positioning,bibliographic,paper/references.bib,citation metadata,YES
+N0030,71,1,Related work and positioning,bibliographic,paper/references.bib,citation metadata,YES
+N0031,71,3,Related work and positioning,bibliographic,paper/references.bib,citation metadata,YES
+N0032,71,5,Related work and positioning,bibliographic,paper/references.bib,citation metadata,YES
+N0033,78,0,Research questions and estimands,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0034,80,0,Research questions and estimands,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0035,81,0,Research questions and estimands,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0036,86,0,Research questions and estimands,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0037,86,10,Research questions and estimands,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0038,86,8,Research questions and estimands,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0039,89,1,Research questions and estimands,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0040,102,10,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0041,102,100,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0042,102,256,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0043,102,18,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0044,102,3,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0045,102,32,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0046,102,2,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0047,104,30,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0048,104,0.1,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0049,104,0.9,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0050,104,5,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0051,104,0,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0052,104,4,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0053,104,256,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0054,104,0,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0055,104,4,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0056,111,1,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0057,111,2,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0058,118,0.05,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0059,118,0.99,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0060,132,20,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0061,132,370,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0062,132,80,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0063,134,256,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0064,138,16,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0065,138,6,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0066,138,92,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0067,138,6,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0068,139,95,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0069,140,87,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0070,140,78,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0071,140,5,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0072,140,9,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0073,141,09492,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0074,142,032,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0075,142,59,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0076,142,26,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0077,143,4,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0078,143,598,Methods,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0079,152,"1,000",Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0080,152,"10,000",Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0081,154,2,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0082,154,5,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0083,154,32,Methods,bibliographic,paper/references.bib,citation metadata,YES
+N0084,161,60,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0085,161,10,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0086,163,120,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0087,163,"1,080",Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0088,163,10,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0089,163,4,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0090,163,10,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0091,163,3,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0092,163,10,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0093,163,2,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0094,165,10,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0095,165,100,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0096,165,15,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0097,165,1,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0098,165,3,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0099,165,5,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0100,165,"2,700",Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0101,165,"1,774",Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0102,165,926,Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0103,165,"2,700",Methods,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0104,173,"1,000",Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0105,173,200,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0106,173,500,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0107,173,800,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0108,175,0,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0109,175,0.00610,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0110,175,0.00637,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0111,175,0.565,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0112,175,0.4796,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0113,175,0.000268,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0114,180,200,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0115,180,95,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0116,180,"10,000",Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0117,184,95,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0118,186,0.000000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0119,186,0,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0120,186,0,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0121,186,0.479609,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0122,186,0.733250,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0123,186,0.733250,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0124,186,0.000000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0125,187,0.006106,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0126,187,0.005307,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0127,187,0.007069,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0128,187,0.565139,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0129,187,0.727144,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0130,187,0.727412,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0131,187,0.034742,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0132,188,0.006099,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0133,188,0.005308,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0134,188,0.007056,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0135,188,0.565142,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0136,188,0.727152,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0137,188,0.727400,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0138,188,0.034741,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0139,189,0.006186,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0140,189,0.005438,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0141,189,0.007104,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0142,189,0.565055,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0143,189,0.727064,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0144,189,0.727223,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0145,189,0.020432,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0146,190,0.006374,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0147,190,0.005673,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0148,190,0.007171,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0149,190,0.564559,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0150,190,0.726876,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0151,190,0.727014,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0152,190,0.004280,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0153,197,0.94,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0154,198,95,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0155,211,0.0064,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0156,211,0.000294,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0157,211,0.000302,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0158,211,0.000214,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0159,211,0.000026,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0160,213,0.73325,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0161,213,0.7269,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0162,213,0.7272,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0163,222,0,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0164,222,95,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0165,224,0.733250,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0166,224,0.733250,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0167,224,0.000000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0168,224,0.000000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0169,224,0,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0170,224,0,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0171,225,0.733250,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0172,225,0.726850,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0173,225,0.006400,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0174,225,0.000294,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0175,225,0.000590,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0176,225,0.000031,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0177,226,0.733250,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0178,226,0.726850,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0179,226,0.006400,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0180,226,0.000302,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0181,226,0.000572,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0182,226,0.000045,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0183,227,0.733250,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0184,227,0.726850,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0185,227,0.006400,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0186,227,0.000214,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0187,227,0.000416,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0188,227,0.000026,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0189,228,0.733250,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0190,228,0.726850,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0191,228,0.006400,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0192,228,0.000026,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0193,228,0.000100,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0194,228,0.000040,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0195,239,10,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0196,239,0.006524,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0197,239,0.006575,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0198,239,100,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0199,239,0.005673,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0200,239,0.006173,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0201,241,0.006253,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0202,241,0.006130,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0203,241,0.028757,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0204,241,0.018340,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0205,246,400,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0206,252,10,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0207,252,0.006550,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0208,252,0.708807,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0209,252,0.011485,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0210,253,100,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0211,253,0.005832,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0212,253,0.421140,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0213,253,0.035612,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0214,254,0.006253,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0215,254,0.569534,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0216,254,0.018340,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0217,255,0.006130,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0218,255,0.560413,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0219,255,0.028757,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0220,262,0.92,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0221,273,0.00608,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0222,273,0.00638,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0223,275,0.006097,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0224,275,1,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0225,275,0.006100,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0226,275,2,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0227,275,0.5833,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0228,275,0.5469,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0229,286,0.006182,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0230,286,0.578034,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0231,286,0.000218,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0232,287,0.006198,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0233,287,0.676241,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0234,287,0.000202,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0235,288,0.006243,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0236,288,0.675892,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0237,288,0.000157,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0238,289,0.006074,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0239,289,0.530596,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0240,289,0.000326,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0241,290,0.006258,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0242,290,0.364105,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0243,290,0.000142,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0244,292,1,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0245,292,0.006192,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0246,292,0.583189,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0247,292,0.000208,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0248,293,2,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0249,293,0.006190,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0250,293,0.546758,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0251,293,0.000210,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0252,300,0.93,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0253,311,0.000007,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0254,311,0.50,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0255,311,0.000080,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0256,311,0.50,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0257,311,0.000268,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0258,311,0.375,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0259,311,0.000482,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0260,311,0.000083,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0261,313,0.000580,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0262,313,0.1875,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0263,313,0.000084,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0264,313,0.1875,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0265,322,95,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0266,324,0.000007,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0267,324,0.000001,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0268,324,0.000018,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0269,324,0.5000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0270,324,0.5000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0271,325,0.000080,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0272,325,0.000163,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0273,325,0.000008,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0274,325,0.2500,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0275,325,0.5000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0276,326,0.000268,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0277,326,0.000482,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0278,326,0.000083,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0279,326,0.1250,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0280,326,0.3750,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0281,327,0.000003,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0282,327,0.000010,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0283,327,0.000003,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0284,327,0.4375,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0285,327,0.4375,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0286,328,0.000084,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0287,328,0.000059,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0288,328,0.000113,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0289,328,0.0625,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0290,328,0.1875,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0291,329,0.000580,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0292,329,0.000528,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0293,329,0.000645,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0294,329,0.0625,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0295,329,0.1875,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0296,340,0,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0297,340,3,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0298,340,0.000266,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0299,340,2,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0300,340,0.399,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0301,340,0.000258,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0302,340,2,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0303,340,0.266,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0304,340,2,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0305,340,0.134,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0306,340,0.000008,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0307,342,4,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0308,342,160,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0309,342,2,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0310,342,5,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0311,342,9,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0312,346,0.88,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0313,357,60,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0314,365,0.22,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0315,365,0.34,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0316,365,0.34,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0317,369,18,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0318,380,"10,000",Results,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,YES
+N0319,384,95,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0320,386,0.000000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0321,386,0.000000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0322,386,0.000000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0323,386,0.000000,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,YES
+N0324,386,0.636610,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0325,387,0.005920,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0326,387,0.004300,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0327,387,0.007260,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0328,387,0.005920,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0329,387,0.625405,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0330,388,0.763290,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0331,388,0.759518,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0332,388,0.767060,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0333,388,0.763290,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0334,388,0.123625,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0335,389,0.002210,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0336,389,0.001470,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0337,389,0.002950,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0338,389,0.002210,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0339,389,0.638945,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0340,390,0.001610,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0341,390,0.000550,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0342,390,0.002780,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0343,390,0.001610,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0344,390,0.634525,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0345,391,0.000020,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0346,391,0.000030,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0347,391,0.000090,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0348,391,0.000020,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0349,391,0.636635,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0350,396,0.05,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0351,404,120,Results,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,YES
+N0352,404,10,Results,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,YES
+N0353,404,0.006110,Results,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,YES
+N0354,404,0.006110,Results,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,YES
+N0355,404,0.061100,Results,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,YES
+N0356,404,0.622155,Results,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,CHECK
+N0357,404,0.757545,Results,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,CHECK
+N0358,406,0.100180,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0359,406,0.102920,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0360,406,0.000180,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0361,406,0.002920,Results,evidence,results/analysis/expansion_v2_final/analysis.json,summaries / contrasts,CHECK
+N0362,414,"1,080",Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0363,414,0.311492,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0364,414,0.732532,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0365,414,0.034163,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0366,414,0.010062,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0367,414,0.000023,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0368,414,0.121200,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0369,414,0.055480,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0370,414,0.184347,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0371,414,0.219752,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0372,414,10,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0373,414,4,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0374,414,10,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0375,414,3,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0376,414,0.493573,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0377,414,10,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0378,414,2,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0379,414,10,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0380,414,3,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0381,416,0.019218,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,CHECK
+N0382,416,0.004493,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0383,416,0.000002,Results,evidence,results/analysis/trajectory_ablation_gpu_v1/analysis.json,summaries / contrasts,YES
+N0384,424,"2,700",Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,YES
+N0385,424,"1,774",Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,YES
+N0386,424,926,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,YES
+N0387,426,10,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0388,426,100,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0389,426,0.565222,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0390,426,0.067583,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0391,426,0.535114,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0392,426,0.649115,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0393,426,0.187878,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0394,426,0.036729,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0395,426,0.550940,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0396,426,0.003145,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0397,426,0.562429,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0398,426,0.000117,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0399,426,0.565103,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0400,429,10,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,YES
+N0401,429,0.699199,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0402,429,0.690510,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0403,429,0.309556,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0404,429,0.701484,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0405,429,0.697594,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0406,429,0.698966,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0407,429,100,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0408,429,0.431246,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0409,429,0.379717,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0410,429,0.066200,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0411,429,0.400396,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0412,429,0.427264,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0413,429,0.431240,Results,evidence,results/analysis/modern_baselines_v1/analysis.json,summaries / contrasts,CHECK
+N0414,434,0.95,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,CHECK
+N0415,434,0,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,YES
+N0416,435,10,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,CHECK
+N0417,435,95,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,CHECK
+N0418,436,0,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,YES
+N0419,441,0.95,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,CHECK
+N0420,441,00,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,YES
+N0421,442,100,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,CHECK
+N0422,443,00,Results,evidence,results/analysis/external_validation_cifar_c_v1/analysis.json,summaries / integrity_audit,YES
+N0423,452,0.006,Discussion,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,YES
+N0424,452,0.0061,Discussion,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,YES
+N0425,452,0.0611,Discussion,evidence,results/analysis/normalization_ablation_v1/analysis.json,summaries / contrasts,YES
+N0426,463,10,Limitations and threats to validity,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0427,463,100,Limitations and threats to validity,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0428,463,10,Limitations and threats to validity,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0429,463,100,Limitations and threats to validity,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0430,463,18,Limitations and threats to validity,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0431,467,30,Limitations and threats to validity,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0432,467,0.0625,Limitations and threats to validity,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0433,472,"1,000",Reproducibility and integrity record,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0434,472,60,Reproducibility and integrity record,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0435,472,120,Reproducibility and integrity record,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0436,472,"1,080",Reproducibility and integrity record,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0437,472,"2,700",Reproducibility and integrity record,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0438,478,10000,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0439,485,3.13,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0440,485,0,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0441,485,2.9,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0442,485,1,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0443,485,2.3,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0444,485,5,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0445,485,2.3,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0446,485,3,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0447,485,11,Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0448,485,"1,000",Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0449,485,"2,700",Reproducibility and integrity record,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0450,524,2,Full protocol matrix,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0451,524,1,Full protocol matrix,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0452,524,000,Full protocol matrix,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0453,526,128,Full protocol matrix,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0454,526,0.001,Full protocol matrix,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0455,526,30,Full protocol matrix,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0456,526,256,Full protocol matrix,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0457,526,0.1,Full protocol matrix,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0458,526,0.9,Full protocol matrix,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0459,526,5,Full protocol matrix,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0460,526,0,Full protocol matrix,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0461,526,4,Full protocol matrix,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0462,528,0.22,Full protocol matrix,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0463,528,0.68,Full protocol matrix,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0464,543,370,Full protocol matrix,protocol,configs/expansion_campaign_v2.json,registered formal configuration,YES
+N0465,553,10,Admission and failure history,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0466,553,960,Admission and failure history,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0467,553,960,Admission and failure history,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES
+N0468,553,"1,000",Admission and failure history,protocol,configs/publication_expansion_campaigns.json,registered campaign configuration,YES

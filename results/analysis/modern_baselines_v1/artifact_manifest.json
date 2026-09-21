@@ -5,7 +5,7 @@
   "artifacts": [
     {
       "path": "analysis.json",
-      "sha256": "sha256:3d965430558be62bc7abd407df2b509ed145abbe1dec2c1dbd9fcd668b45c0a9"
+      "sha256": "sha256:f4d35370b82f586c8dabe7f11cbe3ac60cdc7158597a21f91ff2516b862139f1"
     },
     {
       "path": "analysis_report.md",
