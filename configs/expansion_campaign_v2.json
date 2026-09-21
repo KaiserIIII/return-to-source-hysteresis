@@ -1,0 +1,66 @@
+{
+  "manifest_version": "1.1.0",
+  "protocol_version": "2.1.0",
+  "evidence_label": "FORMAL_EXPANSION_CORRECTED",
+  "result_set": "formal_v2",
+  "smoke_result_set": "smoke_v2_1",
+  "supersedes_result_set": "formal",
+  "dataset_provenance_file": "configs/cifar_dataset_provenance_v2.json",
+  "datasets": ["cifar10", "cifar100"],
+  "dataset_root": "data",
+  "seeds": [0, 1, 2, 3, 4],
+  "model": {
+    "architecture": "cifar_resnet18",
+    "source_epochs": 30,
+    "optimizer": "SGD",
+    "learning_rate": 0.1,
+    "weight_decay": 0.0005,
+    "batch_size": 256
+  },
+  "methods": ["source", "tent", "anchor", "ema_restore", "periodic_reset"],
+  "method_classification": {
+    "source": "non-adaptive baseline; evaluation mode is fixed throughout the stream",
+    "tent": "published baseline core behavior",
+    "anchor": "diagnostic control",
+    "ema_restore": "diagnostic control; not claimed as CoTTA",
+    "periodic_reset": "diagnostic control"
+  },
+  "published_modern_baselines_pending_independent_reproduction": ["CoTTA", "EATA", "SAR", "RoTTA"],
+  "trajectories": ["A-B-A", "A-B-C-A"],
+  "shift_families": ["noise", "brightness", "contrast", "blur", "rotation"],
+  "severities": [1, 2],
+  "batch_size": 128,
+  "adaptation_passes": 1,
+  "adaptation_learning_rate": 0.001,
+  "ablations": {
+    "learning_rate": [0.0001, 0.001, 0.01],
+    "adaptation_passes": [1, 2, 4],
+    "trajectory_length": ["A-B-A", "A-B-C-A"]
+  },
+  "prospective_mechanism": {
+    "variables": ["prediction_entropy_before_update", "gradient_norm_before_update", "update_norm", "parameter_drift_before_return"],
+    "measured_before_return_outcome": true,
+    "outcome": "clean-source accuracy before return-stage adaptation"
+  },
+  "primary_endpoint": "absolute_hysteresis_before_return_adaptation",
+  "primary_endpoint_definition": "checkpoint_source_accuracy minus clean-return accuracy before return adaptation",
+  "secondary_endpoints": ["update_induced_hysteresis_before_return_adaptation", "configuration_gap", "return_accuracy_after_adaptation", "target_accuracy_pre_update_online", "target_entropy_pre_update_online", "ece", "parameter_drift_before_return", "wall_clock_seconds"],
+  "labels_allowed_during_adaptation": false,
+  "metric_only_label_use": "labels are read only after logits are detached to score pre-update online target predictions",
+  "retries": 2,
+  "formal_results_must_not_be_overwritten": true,
+  "code_provenance_required": ["runner_sha256", "supervisor_sha256"],
+  "corrections": [
+    "keep the non-adaptive source baseline in evaluation mode so BatchNorm running statistics cannot change",
+    "measure parameter drift before return-stage evaluation and adaptation",
+    "record registered target-stream accuracy and entropy from pre-update predictions"
+  ],
+  "abca_c_domain": "channel_permutation",
+  "abca_c_domain_rationale": "fixed outside the B shift-family factor to prevent B-family comparisons from changing the C-domain intervention",
+  "stop_rules": [
+    "stop a dataset if source balanced accuracy is below 0.50 after source training",
+    "withdraw a mechanism claim if prospective predictors fail held-seed validation",
+    "do not mark modern-baseline coverage complete until independent published implementations pass",
+    "do not promote the superseded formal result set to evidence"
+  ]
+}

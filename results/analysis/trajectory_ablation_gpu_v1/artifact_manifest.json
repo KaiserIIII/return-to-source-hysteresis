@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_script_sha256": "sha256:897210c6c66c8ba83954966ae4caf2ced3c29657c70c7f5bfd9166df83495407",
+  "artifacts": [
+    {
+      "path": "analysis.json",
+      "sha256": "sha256:3e69328ac0bc870f890b7a88cd7862e9da188071ea0def4db5ecb3a620948657",
+      "bytes": 114683
+    },
+    {
+      "path": "analysis_report.md",
+      "sha256": "sha256:b44c6159e3f7933afe775dc64d3ba9eee2f333abf2e265d85c15c63bdbf65ede",
+      "bytes": 4300
+    },
+    {
+      "path": "campaign_freeze.json",
+      "sha256": "sha256:9aa59bfef5c100ad9a2060452d6fa09f957e6847398c47d52fbc66c06fb9f1eb",
+      "bytes": 1514
+    },
+    {
+      "path": "contrasts.csv",
+      "sha256": "sha256:37a642774a18931f85264156bfebf1e5c4fe41df23726f89d05be8632bc3890b",
+      "bytes": 22687
+    },
+    {
+      "path": "hyperparameter_habs.pdf",
+      "sha256": "sha256:ebf713c6ccccd9d2136d29651822fd67684b486f34d09baf53d61e21f382f8c5",
+      "bytes": 20988
+    },
+    {
+      "path": "hyperparameter_habs.png",
+      "sha256": "sha256:aea7c535c950846813df91f2f3ce1e0bab389da21e00758d69afd09000ca069f",
+      "bytes": 104077
+    },
+    {
+      "path": "rows.csv",
+      "sha256": "sha256:0b1c356f24a931848c68b311e5a41f4ee8c77f1cad37489fed29db164897c104",
+      "bytes": 220069
+    },
+    {
+      "path": "trajectory_habs.pdf",
+      "sha256": "sha256:8ad2a015c854edb68477946aafe282d7d0bc7fbde5bf6beb5ac80d6a87d5a479",
+      "bytes": 18748
+    },
+    {
+      "path": "trajectory_habs.png",
+      "sha256": "sha256:d39dc80e8c3ae60e79223e47dd2343ab47f89b244a7c02e7f16a6e245ba185c9",
+      "bytes": 93470
+    }
+  ]
+}

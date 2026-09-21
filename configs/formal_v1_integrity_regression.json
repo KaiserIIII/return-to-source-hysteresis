@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "formal_v1",
+  "disposition": "INVALID_FOR_PRIMARY_EVIDENCE",
+  "observed_jobs": 1000,
+  "reason_codes": [
+    "SOURCE_BN_STATE_CONTAMINATION",
+    "DRIFT_TEMPORAL_MISLABELING",
+    "INCOMPLETE_RUNNER_DATASET_PROVENANCE"
+  ],
+  "deletion_policy": "PRESERVE_IMMUTABLY",
+  "status_path": "run_state/expansion_formal_status.json",
+  "results_path": "results/expansion/formal",
+  "audit_path": "docs/expansion_v1_integrity_audit.md",
+  "status_sha256": "sha256:62cefe30597853b69b27dc03ae80ae353b9440c48137ff6ff86e20e0cf5706f4",
+  "manifest_sha256": "sha256:f4731af684af9cbc5a3efb3148106c9b736453027f856ea6ac5a0188e8a01c0b",
+  "audit_sha256": "sha256:f97c830b56508246131b1a26dc634bb7ae2c989766db0c81f3036fbce0b8f87f",
+  "result_hash_list_sha256": "sha256:0b97487f50aeaeb1ab39ccd711424a06e1bb48fe920bd4917b5deccd0c21d3d8",
+  "regression_assertions": [
+    "a static source model must preserve its complete state_dict across every trajectory",
+    "BatchNorm running_mean and running_var must remain bit-identical for source",
+    "prospective measurement event IDs must precede outcome event IDs",
+    "each result shard must be bound to frozen code, manifest, data, checkpoint, environment, and protocol identities"
+  ]
+}

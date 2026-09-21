@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "datasets": {
+    "cifar10": {
+      "source": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz",
+      "archive_md5": "c58f30108f718f92721af3b95e74349a"
+    },
+    "cifar100": {
+      "source": "https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz",
+      "archive_md5": "eb9058c3a382ffc7106e4002c42a8d85"
+    }
+  },
+  "files": [
+    {"path": "data/cifar-10-batches-py/batches.meta", "bytes": 158, "sha256": "sha256:f962466ef690d46b226450fb9aadc74ba4bc64a76aa526b5827fe4bc5c7125cb"},
+    {"path": "data/cifar-10-batches-py/data_batch_1", "bytes": 31035704, "sha256": "sha256:54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd"},
+    {"path": "data/cifar-10-batches-py/data_batch_2", "bytes": 31035320, "sha256": "sha256:766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8"},
+    {"path": "data/cifar-10-batches-py/data_batch_3", "bytes": 31035999, "sha256": "sha256:0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9"},
+    {"path": "data/cifar-10-batches-py/data_batch_4", "bytes": 31035696, "sha256": "sha256:3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b"},
+    {"path": "data/cifar-10-batches-py/data_batch_5", "bytes": 31035623, "sha256": "sha256:d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"},
+    {"path": "data/cifar-10-batches-py/readme.html", "bytes": 88, "sha256": "sha256:4d1c3fb199d6a183ae03f5162b469d7bc04edf2fad9547bd5f224271d52f98e5"},
+    {"path": "data/cifar-10-batches-py/test_batch", "bytes": 31035526, "sha256": "sha256:f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831"},
+    {"path": "data/cifar-10-python.tar.gz", "bytes": 170498071, "sha256": "sha256:6d958be074577803d12ecdefd02955f39262c83c16fe9348329d7fe0b5c001ce"},
+    {"path": "data/cifar-100-python.tar.gz", "bytes": 169001437, "sha256": "sha256:85cd44d02ba6437773c5bbd22e183051d648de2e7d6b014e1ef29b855ba677a7"},
+    {"path": "data/cifar-100-python/file.txt~", "bytes": 0, "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"},
+    {"path": "data/cifar-100-python/meta", "bytes": 1473, "sha256": "sha256:a5d4786345c961390f865e93b434dbd5c6904ce880667e0cb888c97d449f28b9"},
+    {"path": "data/cifar-100-python/test", "bytes": 31049707, "sha256": "sha256:4b67687d9933c4db8f0831104447f15b93774f4f464bd0516f0f0f2ac83b7864"},
+    {"path": "data/cifar-100-python/train", "bytes": 155249918, "sha256": "sha256:735e79b04f092ca3d2e6d07f368c0a7d70d48c48d28865950cc24454cf45129b"}
+  ],
+  "verified_utc": "2026-09-07T12:30:00Z"
+}

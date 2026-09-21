@@ -1,0 +1,444 @@
+{
+  "schema_version": "1.0.0",
+  "protocol": "standard_cifar_c",
+  "sources_sha256": "sha256:8fe9c96aa1fe5c525800f7371ddb21d22076983f7ce3e4a56cdb4e8bb1459d89",
+  "corruptions": [
+    "gaussian_noise",
+    "shot_noise",
+    "impulse_noise",
+    "defocus_blur",
+    "glass_blur",
+    "motion_blur",
+    "zoom_blur",
+    "snow",
+    "frost",
+    "fog",
+    "brightness",
+    "contrast",
+    "elastic_transform",
+    "pixelate",
+    "jpeg_compression"
+  ],
+  "severity_block_size": 10000,
+  "datasets": {
+    "cifar10_c": {
+      "source": {
+        "record_id": 2535967,
+        "doi": "10.5281/zenodo.2535967",
+        "license": "CC-BY-4.0",
+        "archive": "CIFAR-10-C.tar",
+        "bytes": 2918471680,
+        "md5": "56bf5dcef84df0e2308c6dcbcbbd8499",
+        "url": "https://zenodo.org/api/records/2535967/files/CIFAR-10-C.tar/content",
+        "extracted_directory": "CIFAR-10-C"
+      },
+      "archive": {
+        "path": "data/external/archives/CIFAR-10-C.tar",
+        "bytes": 2918471680,
+        "md5": "md5:56bf5dcef84df0e2308c6dcbcbbd8499",
+        "sha256": "sha256:c72763e101c723b7c507b96205f7e938912a5d587376173b825850cf3cb876a7"
+      },
+      "files": [
+        {
+          "path": "data/external/CIFAR-10-C/labels.npy",
+          "bytes": 50128,
+          "sha256": "sha256:e6d972b1238665d8ef54aae5affe8e292dda1eb88a6840bf0f5988cdb649da7b",
+          "shape": [
+            50000
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/gaussian_noise.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:269c7f8f1b896cb96cf194814171d0cfc6d73a1546cd718ba629756a906ecaf1",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/shot_noise.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:645936b5a5cf0b72151289c598b61b59429c917b346256e63d399a8c3a5ed078",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/impulse_noise.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:9eaebc6e508ebe05382c2631177ca1503f6f3aea68090c509d24506f86b1164f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/defocus_blur.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:6140f9954d10d5c606d598ca6e26d5d94a301894e94493035f03182f551b745e",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/glass_blur.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:ec1586616c585b8f8742dc0003d9bebe07d822ed3c997b6215003d5afd66bdfa",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/motion_blur.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:34baad18726fabefeb69b5cbedefda41ee7969dbed1562740ef9e1095d5dd954",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/zoom_blur.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:a3af830b0759addce9ac555f938643f3dcf2b9fef9df7f4479750a568c62006f",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/snow.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:84d3fdf8b17e18b7657804321dc13dd260ea1151c9bc91e55e13656e5f5410f2",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/frost.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:8be9ab8d9095b3fb3ebf4dd60f0a83651be115c3ac77c8adc5b3e0d3add5ad8c",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/fog.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:48f8f040b3aa25850119400ac2afacf72affdaaa3fcdd5daff425e876f996e50",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/brightness.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:3bb5990e41b0212b62bc0b4385f4f95d68ecb94da627eacba4552381228a17c3",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/contrast.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:cb5e3765f52a172a380ce8c8c3096b78669d2f01f4f6e958ee30729f680bb9fb",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/elastic_transform.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:664626e48ed03abec17614d2c7a2cf827bc82778e2319573c73a49a99ca0b21a",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/pixelate.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:6657f75ac66c907ad8206248bc1f48bef0dac219a1617f4dfd1b15e46ccf5ac7",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-10-C/jpeg_compression.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:60bd735b9bba513df1f22adc460942de6ef03f9e5870340464db1fc7e6331d51",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      ]
+    },
+    "cifar100_c": {
+      "source": {
+        "record_id": 3555552,
+        "doi": "10.5281/zenodo.3555552",
+        "license": "CC-BY-4.0",
+        "archive": "CIFAR-100-C.tar",
+        "bytes": 2918473216,
+        "md5": "11f0ed0f1191edbf9fa23466ae6021d3",
+        "url": "https://zenodo.org/api/records/3555552/files/CIFAR-100-C.tar/content",
+        "extracted_directory": "CIFAR-100-C"
+      },
+      "archive": {
+        "path": "data/external/archives/CIFAR-100-C.tar",
+        "bytes": 2918473216,
+        "md5": "md5:11f0ed0f1191edbf9fa23466ae6021d3",
+        "sha256": "sha256:30ee6543a1bfd049fa33834b7c1ada301e7064b7fbe8fc38340eb8b62ced4b33"
+      },
+      "files": [
+        {
+          "path": "data/external/CIFAR-100-C/labels.npy",
+          "bytes": 50128,
+          "sha256": "sha256:9185b22b619b6334e3d9864aec5dcb9eb0db8710da91245c0afbe6d4e7db9431",
+          "shape": [
+            50000
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/gaussian_noise.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:776391036473e944144809983ce9cb0c7831593e84a1be7cf29ccc72f194a120",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/shot_noise.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:4d661214412045f79fdbc8a5095506e8682a883bcb61693dc17b48a9f7d7a51b",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/impulse_noise.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:7dcf455178224fb63c956d2f2bd50c1da71c57671ac7f7238610752f91a23e84",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/defocus_blur.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:134ab1cb3765e4551b7ee121f099c8dafb88c096f45deee5bee98e96a16c0d61",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/glass_blur.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:4c612859c74e1cf1751763eddaaf55e742650f4f9c67b8321faf47e524707d5b",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/motion_blur.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:cb2d7dc6dcbabf3f0ac198397186846ec57985a6c4f4dab10999f17835555233",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/zoom_blur.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:f0c746dec1c23438fa4e22a90e18eed7b6b96b71fd35776cad709b163bef0a56",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/snow.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:359b96dc23af57c3210fefbd37a007576e8190ac492881920d475517e0ee5647",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/frost.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:9ca999b14435f20b60412cdf9c4d054bad563d656d80cf71795f0a9a3d2271d2",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/fog.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:0a8c65f809028fd7867271988932477e3efb7d781a367927f28674076389bc20",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/brightness.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:5a81b1cb9365e6ce853fca57740a4156c6b724e97d95b0673df3820ee2056ab9",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/contrast.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:a838439f52a70006cf20825ef78c59b25574ff77689a97f69056df50e272dddb",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/elastic_transform.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:690437cd574582378fbd57b25923b87d39f7069166e7a319beec6e5b612e2aab",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/pixelate.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:4fa41f887ffeccc2ab0c3c235345c8dfd8e19d0fcb3cd104d5a274d5ba4d337d",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        },
+        {
+          "path": "data/external/CIFAR-100-C/jpeg_compression.npy",
+          "bytes": 153600128,
+          "sha256": "sha256:97d3e7fa79f231b4423901965a8f7a992e22831e99735e7cd3bb8bdfbd3ab892",
+          "shape": [
+            50000,
+            32,
+            32,
+            3
+          ],
+          "dtype": "uint8"
+        }
+      ]
+    }
+  },
+  "verified_at": "2026-09-19T02:25:41.875697+00:00"
+}

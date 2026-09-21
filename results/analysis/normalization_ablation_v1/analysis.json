@@ -1,0 +1,833 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_label": "NORMALIZATION_ABLATION_V1_ANALYSIS",
+  "analysis_status": "PASS",
+  "created_at": "2026-09-20T11:57:46.515375+00:00",
+  "design": {
+    "independent_replication_unit": "source-training-seed",
+    "seed_aggregation": "mean across A-B-A and A-B-C-A within seed before inference",
+    "primary_reference": "source_eval",
+    "primary_policies": [
+      "bn_affine_frozen_stats",
+      "bn_affine_running_stats",
+      "train_eval_policy_variant"
+    ],
+    "excluded_from_primary_if_accuracy_drop_gt": 0.05,
+    "multiplicity": "Holm correction over comparable policy x metric contrasts",
+    "uncertainty": "95% seed-level bootstrap percentile interval",
+    "p_value": "exact two-sided sign-flip over seed-level paired differences"
+  },
+  "audit": {
+    "status": "PASS",
+    "checked_shards": 120,
+    "provenance": {
+      "runner_sha256": "sha256:ea20ae9d7cd8cbacd919057bf69b67e07d1694e538037f5d25daec86929fad1d",
+      "supervisor_sha256": "sha256:0f3320e4d4642f7c79ec103d78f1907109f235adc0b7f68b92ae864ab2e6c0d8",
+      "manifest_sha256": "sha256:85e5f8ea01a3246df81352eaa85f94a5ad71fc4eb0c05a66b13aeb4af111b41e",
+      "dataset_provenance_sha256": "sha256:4a909492144b016d792323f19cd239a48b01c5ffc9289e47becb3b87b39f0c9b",
+      "method_registry_sha256": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
+      "method_contracts_sha256": "sha256:8b26a1bb170cd40060149b70c9878cd7c8c3ec01932191a9e69484f029a9bbdc"
+    }
+  },
+  "comparability": {
+    "reference_policy": "source_eval",
+    "policies": {
+      "bn_affine_frozen_stats": {
+        "n_rows": 20,
+        "checkpoint_source_accuracy_mean": 0.8638399999999999,
+        "reference_accuracy_mean": 0.8638399999999999,
+        "absolute_accuracy_drop": 0.0,
+        "primary_comparable": true,
+        "warning": false,
+        "threshold": 0.05
+      },
+      "bn_affine_running_stats": {
+        "n_rows": 20,
+        "checkpoint_source_accuracy_mean": 0.8638399999999999,
+        "reference_accuracy_mean": 0.8638399999999999,
+        "absolute_accuracy_drop": 0.0,
+        "primary_comparable": true,
+        "warning": false,
+        "threshold": 0.05
+      },
+      "groupnorm_checkpoint": {
+        "n_rows": 20,
+        "checkpoint_source_accuracy_mean": 0.10018,
+        "reference_accuracy_mean": 0.8638399999999999,
+        "absolute_accuracy_drop": 0.7636599999999999,
+        "primary_comparable": false,
+        "warning": true,
+        "threshold": 0.05
+      },
+      "layernorm_checkpoint": {
+        "n_rows": 20,
+        "checkpoint_source_accuracy_mean": 0.10292000000000001,
+        "reference_accuracy_mean": 0.8638399999999999,
+        "absolute_accuracy_drop": 0.7609199999999999,
+        "primary_comparable": false,
+        "warning": true,
+        "threshold": 0.05
+      },
+      "source_eval": {
+        "n_rows": 20,
+        "checkpoint_source_accuracy_mean": 0.8638399999999999,
+        "reference_accuracy_mean": 0.8638399999999999,
+        "absolute_accuracy_drop": 0.0,
+        "primary_comparable": true,
+        "warning": false,
+        "threshold": 0.05
+      },
+      "train_eval_policy_variant": {
+        "n_rows": 20,
+        "checkpoint_source_accuracy_mean": 0.8638399999999999,
+        "reference_accuracy_mean": 0.8638399999999999,
+        "absolute_accuracy_drop": 0.0,
+        "primary_comparable": true,
+        "warning": false,
+        "threshold": 0.05
+      }
+    }
+  },
+  "summaries": {
+    "source_eval": {
+      "absolute_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.0,
+        "sd_row_value": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "update_induced_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.0,
+        "sd_row_value": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "target_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.63554,
+        "sd_row_value": 0.03987282282457562,
+        "ci95_low": 0.6182324375000002,
+        "ci95_high": 0.6523676875,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "checkpoint_source_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.8638399999999999,
+        "sd_row_value": 0.004783568366375619,
+        "ci95_low": 0.8617649999999999,
+        "ci95_high": 0.8658999999999999,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "return_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.8638399999999999,
+        "sd_row_value": 0.004783568366375619,
+        "ci95_low": 0.8617798749999999,
+        "ci95_high": 0.8657549999999998,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      }
+    },
+    "bn_affine_frozen_stats": {
+      "absolute_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.0030549999999999965,
+        "sd_row_value": 0.00356318529881399,
+        "ci95_low": 0.0015798749999999984,
+        "ci95_high": 0.0045899999999999995,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "update_induced_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.0030549999999999965,
+        "sd_row_value": 0.00356318529881399,
+        "ci95_low": 0.0016099999999999947,
+        "ci95_high": 0.004654999999999981,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "target_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.6288474999999999,
+        "sd_row_value": 0.04339751531512278,
+        "ci95_low": 0.6101439375,
+        "ci95_high": 0.6469700624999999,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "checkpoint_source_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.8638399999999999,
+        "sd_row_value": 0.004783568366375619,
+        "ci95_low": 0.8617649999999999,
+        "ci95_high": 0.8658999999999999,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "return_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.8607849999999999,
+        "sd_row_value": 0.005075874308924525,
+        "ci95_low": 0.85869,
+        "ci95_high": 0.862965125,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      }
+    },
+    "bn_affine_running_stats": {
+      "absolute_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.030549999999999994,
+        "sd_row_value": 0.048489646208996866,
+        "ci95_low": 0.010899500000000003,
+        "ci95_high": 0.05246012499999999,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "update_induced_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.030549999999999994,
+        "sd_row_value": 0.048489646208996866,
+        "ci95_low": 0.012604749999999994,
+        "ci95_high": 0.052255249999999975,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "target_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.6965425,
+        "sd_row_value": 0.06871684707819779,
+        "ci95_low": 0.666937375,
+        "ci95_high": 0.7256375624999998,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "checkpoint_source_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.8638399999999999,
+        "sd_row_value": 0.004783568366375619,
+        "ci95_low": 0.8617649999999999,
+        "ci95_high": 0.8658999999999999,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "return_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.8332900000000001,
+        "sd_row_value": 0.04878068966517926,
+        "ci95_low": 0.812039,
+        "ci95_high": 0.8526857499999999,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      }
+    },
+    "train_eval_policy_variant": {
+      "absolute_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.0030549999999999965,
+        "sd_row_value": 0.00356318529881399,
+        "ci95_low": 0.0015798749999999984,
+        "ci95_high": 0.0045899999999999995,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "update_induced_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.0030549999999999965,
+        "sd_row_value": 0.00356318529881399,
+        "ci95_low": 0.0016099999999999947,
+        "ci95_high": 0.004654999999999981,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "target_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.6288474999999999,
+        "sd_row_value": 0.04339751531512278,
+        "ci95_low": 0.6101439375,
+        "ci95_high": 0.6469700624999999,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "checkpoint_source_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.8638399999999999,
+        "sd_row_value": 0.004783568366375619,
+        "ci95_low": 0.8617649999999999,
+        "ci95_high": 0.8658999999999999,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "return_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.8607849999999999,
+        "sd_row_value": 0.005075874308924525,
+        "ci95_low": 0.85869,
+        "ci95_high": 0.862965125,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      }
+    },
+    "groupnorm_checkpoint": {
+      "absolute_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 8.999999999999842e-05,
+        "sd_row_value": 0.00019708400559953243,
+        "ci95_low": 1.4999999999999736e-05,
+        "ci95_high": 0.00017999999999999684,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "update_induced_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 8.999999999999842e-05,
+        "sd_row_value": 0.00019708400559953243,
+        "ci95_low": 1.4999999999999736e-05,
+        "ci95_high": 0.00017999999999999684,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "target_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.10001750000000001,
+        "sd_row_value": 6.742442162583801e-05,
+        "ci95_low": 0.10000000000000002,
+        "ci95_high": 0.10005000000000001,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "checkpoint_source_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.10018,
+        "sd_row_value": 0.00024623480450043265,
+        "ci95_low": 0.100075,
+        "ci95_high": 0.100285,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "return_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.10009000000000001,
+        "sd_row_value": 0.00019708400559953243,
+        "ci95_low": 0.100015,
+        "ci95_high": 0.10018000000000002,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      }
+    },
+    "layernorm_checkpoint": {
+      "absolute_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.0014599999999999988,
+        "sd_row_value": 0.00449378518213297,
+        "ci95_low": 0.0,
+        "ci95_high": 0.003649999999999997,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "update_induced_hysteresis": {
+        "n_rows": 20,
+        "mean_row_value": 0.0014599999999999988,
+        "sd_row_value": 0.00449378518213297,
+        "ci95_low": 0.0,
+        "ci95_high": 0.003649999999999997,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "target_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.10016500000000002,
+        "sd_row_value": 0.0005631443677667104,
+        "ci95_low": 0.10000000000000002,
+        "ci95_high": 0.10045000000000001,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "checkpoint_source_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.10292000000000001,
+        "sd_row_value": 0.005991713576177295,
+        "ci95_low": 0.10073000000000001,
+        "ci95_high": 0.10584,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      },
+      "return_accuracy": {
+        "n_rows": 20,
+        "mean_row_value": 0.10146000000000002,
+        "sd_row_value": 0.004493785182132971,
+        "ci95_low": 0.10000000000000002,
+        "ci95_high": 0.10365000000000002,
+        "note": "row summaries are descriptive; inferential unit is source-training-seed"
+      }
+    }
+  },
+  "contrasts": [
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "bn_affine_frozen_stats",
+      "metric": "absolute_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.006000000000000005,
+        "1": 0.007499999999999951,
+        "2": 0.007850000000000024,
+        "3": 0.007349999999999968,
+        "4": 0.0018500000000000183
+      },
+      "mean_difference": 0.006109999999999993,
+      "sd_difference": 0.002482790768470015,
+      "cohen_dz": 2.4609403569537176,
+      "ci95_low": 0.0038800000000000167,
+      "ci95_high": 0.007609999999999983,
+      "p_value_two_sided": 0.0625,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260911,
+      "p_value_holm": 0.5625
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "bn_affine_frozen_stats",
+      "metric": "update_induced_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.006000000000000005,
+        "1": 0.007499999999999951,
+        "2": 0.007850000000000024,
+        "3": 0.007349999999999968,
+        "4": 0.0018500000000000183
+      },
+      "mean_difference": 0.006109999999999993,
+      "sd_difference": 0.002482790768470015,
+      "cohen_dz": 2.4609403569537176,
+      "ci95_low": 0.0038800000000000167,
+      "ci95_high": 0.007609999999999983,
+      "p_value_two_sided": 0.0625,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260912,
+      "p_value_holm": 0.5625
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "bn_affine_frozen_stats",
+      "metric": "target_accuracy",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": -0.017225000000000046,
+        "1": -0.019400000000000084,
+        "2": -0.021300000000000097,
+        "3": -0.009850000000000025,
+        "4": 0.0008500000000001284
+      },
+      "mean_difference": -0.013385000000000025,
+      "sd_difference": 0.009065104798070545,
+      "cohen_dz": -1.4765411209420265,
+      "ci95_low": -0.019725000000000083,
+      "ci95_high": -0.005569999999999964,
+      "p_value_two_sided": 0.125,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260913,
+      "p_value_holm": 0.5625
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "bn_affine_running_stats",
+      "metric": "absolute_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.05399999999999999,
+        "1": 0.05659999999999993,
+        "2": 0.06280000000000002,
+        "3": 0.06295,
+        "4": 0.06914999999999999
+      },
+      "mean_difference": 0.06109999999999999,
+      "sd_difference": 0.005953465377408368,
+      "cohen_dz": 10.262930264423193,
+      "ci95_low": 0.056309999999999985,
+      "ci95_high": 0.0654,
+      "p_value_two_sided": 0.0625,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260914,
+      "p_value_holm": 0.5625
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "bn_affine_running_stats",
+      "metric": "update_induced_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.05399999999999999,
+        "1": 0.05659999999999993,
+        "2": 0.06280000000000002,
+        "3": 0.06295,
+        "4": 0.06914999999999999
+      },
+      "mean_difference": 0.06109999999999999,
+      "sd_difference": 0.005953465377408368,
+      "cohen_dz": 10.262930264423193,
+      "ci95_low": 0.05659999999999993,
+      "ci95_high": 0.06543,
+      "p_value_two_sided": 0.0625,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260915,
+      "p_value_holm": 0.5625
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "bn_affine_running_stats",
+      "metric": "target_accuracy",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.12967499999999998,
+        "1": 0.12797499999999995,
+        "2": 0.11929999999999996,
+        "3": 0.12007499999999993,
+        "4": 0.1130000000000001
+      },
+      "mean_difference": 0.12200499999999999,
+      "sd_difference": 0.006830112553977383,
+      "cohen_dz": 17.862809585612574,
+      "ci95_low": 0.11693500000000001,
+      "ci95_high": 0.12725999999999998,
+      "p_value_two_sided": 0.0625,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260916,
+      "p_value_holm": 0.5625
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "train_eval_policy_variant",
+      "metric": "absolute_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.006000000000000005,
+        "1": 0.007499999999999951,
+        "2": 0.007850000000000024,
+        "3": 0.007349999999999968,
+        "4": 0.0018500000000000183
+      },
+      "mean_difference": 0.006109999999999993,
+      "sd_difference": 0.002482790768470015,
+      "cohen_dz": 2.4609403569537176,
+      "ci95_low": 0.003878250000000018,
+      "ci95_high": 0.007609999999999983,
+      "p_value_two_sided": 0.0625,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260917,
+      "p_value_holm": 0.5625
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "train_eval_policy_variant",
+      "metric": "update_induced_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.006000000000000005,
+        "1": 0.007499999999999951,
+        "2": 0.007850000000000024,
+        "3": 0.007349999999999968,
+        "4": 0.0018500000000000183
+      },
+      "mean_difference": 0.006109999999999993,
+      "sd_difference": 0.002482790768470015,
+      "cohen_dz": 2.4609403569537176,
+      "ci95_low": 0.0038800000000000167,
+      "ci95_high": 0.007609999999999983,
+      "p_value_two_sided": 0.0625,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260918,
+      "p_value_holm": 0.5625
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "train_eval_policy_variant",
+      "metric": "target_accuracy",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": -0.017225000000000046,
+        "1": -0.019400000000000084,
+        "2": -0.021300000000000097,
+        "3": -0.009850000000000025,
+        "4": 0.0008500000000001284
+      },
+      "mean_difference": -0.013385000000000025,
+      "sd_difference": 0.009065104798070545,
+      "cohen_dz": -1.4765411209420265,
+      "ci95_low": -0.019725000000000083,
+      "ci95_high": -0.005339999999999945,
+      "p_value_two_sided": 0.125,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260919,
+      "p_value_holm": 0.5625
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "groupnorm_checkpoint",
+      "metric": "absolute_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0002999999999999947,
+        "3": 0.0,
+        "4": 0.0005999999999999894
+      },
+      "mean_difference": 0.00017999999999999684,
+      "sd_difference": 0.00026832815729997006,
+      "cohen_dz": 0.6708203932499369,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0004199999999999926,
+      "p_value_two_sided": 0.5,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260920,
+      "p_value_holm": null
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "groupnorm_checkpoint",
+      "metric": "update_induced_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0002999999999999947,
+        "3": 0.0,
+        "4": 0.0005999999999999894
+      },
+      "mean_difference": 0.00017999999999999684,
+      "sd_difference": 0.00026832815729997006,
+      "cohen_dz": 0.6708203932499369,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0004199999999999926,
+      "p_value_two_sided": 0.5,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260921,
+      "p_value_holm": null
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "groupnorm_checkpoint",
+      "metric": "target_accuracy",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": -0.5302250000000001,
+        "1": -0.5336500000000001,
+        "2": -0.5362250000000001,
+        "3": -0.533,
+        "4": -0.5446
+      },
+      "mean_difference": -0.53554,
+      "sd_difference": 0.005496038345936065,
+      "cohen_dz": -97.44109598434557,
+      "ci95_low": -0.54022,
+      "ci95_high": -0.5319800000000001,
+      "p_value_two_sided": 0.0625,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260922,
+      "p_value_holm": null
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "layernorm_checkpoint",
+      "metric": "absolute_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.014599999999999988,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "mean_difference": 0.0029199999999999977,
+      "sd_difference": 0.006529318494299381,
+      "cohen_dz": 0.4472135954999579,
+      "ci95_low": 0.0,
+      "ci95_high": 0.008759999999999993,
+      "p_value_two_sided": 1.0,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260923,
+      "p_value_holm": null
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "layernorm_checkpoint",
+      "metric": "update_induced_hysteresis",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.014599999999999988,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "mean_difference": 0.0029199999999999977,
+      "sd_difference": 0.006529318494299381,
+      "cohen_dz": 0.4472135954999579,
+      "ci95_low": 0.0,
+      "ci95_high": 0.008759999999999993,
+      "p_value_two_sided": 1.0,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260924,
+      "p_value_holm": null
+    },
+    {
+      "method": "tent",
+      "reference_policy": "source_eval",
+      "policy": "layernorm_checkpoint",
+      "metric": "target_accuracy",
+      "n_seeds": 5,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "difference_by_seed": {
+        "0": -0.5302250000000001,
+        "1": -0.5336500000000001,
+        "2": -0.5362250000000001,
+        "3": -0.533,
+        "4": -0.5446
+      },
+      "mean_difference": -0.53554,
+      "sd_difference": 0.005496038345936065,
+      "cohen_dz": -97.44109598434557,
+      "ci95_low": -0.54022,
+      "ci95_high": -0.5319800000000001,
+      "p_value_two_sided": 0.0625,
+      "permutations": 32,
+      "unit": "source-training-seed",
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 20260925,
+      "p_value_holm": null
+    }
+  ],
+  "claim_boundary": {
+    "status": "CONDITIONAL",
+    "supported": "normalization policy materially changes observed return-to-source hysteresis in this CIFAR-10 noise protocol",
+    "not_supported": "a universal causal decomposition into configuration gap and recurrent updates; this campaign sets configuration_gap to zero within each policy checkpoint",
+    "negative_or_limited": "GroupNorm and LayerNorm checkpoints collapse source-domain accuracy and are exploratory architecture controls, not fair primary comparisons"
+  }
+}

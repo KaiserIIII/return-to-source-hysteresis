@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "retrieved_at": "2026-09-09T15:30:00+08:00",
+  "installation_performed": false,
+  "use": "behavior audit and independent reimplementation",
+  "providers": {
+    "eata": {
+      "repository": "https://github.com/mr-eggplant/EATA",
+      "commit": "f739b3668cc7617e9b9f1979c1a358497a3472c3",
+      "license": "MIT",
+      "paper": "Efficient Test-Time Model Adaptation without Forgetting (ICML 2022)",
+      "files": {
+        "eata.py": "sha256:f162467d300cb12a14a3c888f693b31d15b12cd116ba0edadfa6560fa8b6ef96",
+        "main.py": "sha256:5ce0e5b359fe69ce676d58fc9b682aa9b03732a2a6d03978d44fff2ca0b167c8",
+        "LICENSE": "sha256:a12fa724137f140fff24e81733054f326eddc2c02c23f3d5b37d53ce20be886b"
+      }
+    },
+    "sar": {
+      "repository": "https://github.com/mr-eggplant/SAR",
+      "commit": "20f6e24b17525f34503510afccedc0629b67b7c4",
+      "license": "BSD-3-Clause",
+      "paper": "Towards Stable Test-Time Adaptation in Dynamic Wild World (ICLR 2023)",
+      "files": {
+        "sar.py": "sha256:0553a395ac2bc087049720f1f162789079fe5ee25aa6a1cf82b2ea6286d66eff",
+        "sam.py": "sha256:b0569de29015016996feae257d30be6cc36f80d42d0f51d4a201eb39d2491712",
+        "main.py": "sha256:738dc9fcc8f7b4fa0ea11e3aad9f5498fab38376f4311b6ecb8c6fab7222456c",
+        "LICENSE": "sha256:e04a34ed5ad6a1a54bf8cf1b5ea0bea33313809acb193e71313025aa0dd3e903"
+      }
+    },
+    "cotta": {
+      "repository": "https://github.com/qinenergy/cotta",
+      "commit": "c212a204b32be4005092e4323105a24a29ad2952",
+      "license": "MIT",
+      "paper": "Continual Test-Time Domain Adaptation (CVPR 2022)",
+      "files": {
+        "cifar/cotta.py": "sha256:bdaa5f1a6d9713f0042cce8ee8d2853cbee1cc996d16c076785ea3d8342265b4",
+        "cifar/cfgs/cifar10/cotta.yaml": "sha256:46807b75a30408a6bbd8eea634810f5764141a873a16f551c03ccaac53cd9a4d",
+        "LICENSE": "sha256:4f535a06092e9391ad8d7ace40c21373fb4fc3f0887b9395eb247efee11f0fee"
+      }
+    },
+    "rotta": {
+      "repository": "https://github.com/BIT-DA/RoTTA",
+      "commit": "67e34c900cdd355fc07e55edd4c577ea7b8ebcc9",
+      "license": "MIT",
+      "paper": "Robust Test-Time Adaptation in Dynamic Scenarios (CVPR 2023)",
+      "files": {
+        "core/adapter/rotta.py": "sha256:5afe615eb2d4c83900c9855ad38f285cd577be5608a72620813190d719401479",
+        "core/utils/memory.py": "sha256:32b30f2ee56c8b4e5fe8be925bbcb972d1252728dde00a16e97b2e6a56acb48e",
+        "core/utils/bn_layers.py": "sha256:73ba1aa37e76a297c1f1b7b80758ccb9c5381fa9c4bdd47775dde1527fe5f481",
+        "configs/adapter/rotta.yaml": "sha256:d47f0cf5df286284b7d4467a2a1cdacfb71af6db12b039111cb4a0e0fd8bf858",
+        "LICENSE": "sha256:d5edbb5e0461e1de8b94cbd197a7ecac7926da63629159d9a01e3aa7a0bbf82a"
+      }
+    }
+  }
+}

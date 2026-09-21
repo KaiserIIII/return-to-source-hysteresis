@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_script_sha256": "sha256:1eae650c7908e3d29fc7e7f302cc3432d45cbeea3978b02e68862f07c7ed285e",
+  "artifacts": [
+    {
+      "path": "analysis.json",
+      "sha256": "sha256:93733bb44b483eb5773b33faf38a923aee6c1305a0d6f5f9b9610a96aae64deb",
+      "bytes": 27350
+    },
+    {
+      "path": "analysis_report.md",
+      "sha256": "sha256:b050ba672401dc2c1e41826f1aca4adf52ef0b94aa2231726e349da71b6dbacd",
+      "bytes": 2953
+    },
+    {
+      "path": "rows.csv",
+      "sha256": "sha256:dac5e6fc3ab4011f2b75d82625378878a0b2f64472e681e25110d07e880497b3",
+      "bytes": 19953
+    }
+  ]
+}

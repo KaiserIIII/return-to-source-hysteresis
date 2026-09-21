@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "methods": {
+    "source": {
+      "parameters": false,
+      "bn_affine": false,
+      "bn_running_statistics": "IMMUTABLE",
+      "optimizer_state": false,
+      "ema_anchor_recovery_state": []
+    },
+    "tent": {
+      "parameters": false,
+      "bn_affine": true,
+      "bn_running_statistics": "DISABLED_AT_CONFIGURATION",
+      "optimizer_state": false,
+      "ema_anchor_recovery_state": []
+    },
+    "anchor": {
+      "parameters": false,
+      "bn_affine": true,
+      "bn_running_statistics": "DISABLED_AT_CONFIGURATION",
+      "optimizer_state": false,
+      "ema_anchor_recovery_state": ["immutable_source_affine_anchor"]
+    },
+    "ema_restore": {
+      "parameters": false,
+      "bn_affine": true,
+      "bn_running_statistics": "DISABLED_AT_CONFIGURATION",
+      "optimizer_state": false,
+      "ema_anchor_recovery_state": ["immutable_source_affine_anchor", "ema_restore_update"]
+    },
+    "periodic_reset": {
+      "parameters": false,
+      "bn_affine": true,
+      "bn_running_statistics": "DISABLED_AT_CONFIGURATION",
+      "optimizer_state": false,
+      "ema_anchor_recovery_state": ["immutable_source_affine_anchor", "periodic_affine_reset"]
+    },
+    "eata": {
+      "parameters": false,
+      "bn_affine": true,
+      "bn_running_statistics": "DISABLED_AT_CONFIGURATION",
+      "optimizer_state": true,
+      "ema_anchor_recovery_state": ["immutable_source_affine_anchor", "diagonal_fisher", "reliable_sample_filter", "nonredundant_probability_ema"]
+    },
+    "sar": {
+      "parameters": false,
+      "bn_affine": true,
+      "bn_running_statistics": "DISABLED_AT_CONFIGURATION",
+      "optimizer_state": true,
+      "ema_anchor_recovery_state": ["immutable_source_affine_anchor", "sam_perturbation", "sam_rollback", "entropy_ema_recovery"]
+    },
+    "cotta": {
+      "parameters": false,
+      "bn_affine": true,
+      "bn_running_statistics": "DISABLED_AT_CONFIGURATION",
+      "optimizer_state": true,
+      "ema_anchor_recovery_state": ["immutable_source_affine_anchor", "teacher_ema", "augmentation_teacher", "stochastic_restore"]
+    },
+    "rotta": {
+      "parameters": false,
+      "bn_affine": true,
+      "bn_running_statistics": "ROBUST_BN_STATE",
+      "optimizer_state": true,
+      "ema_anchor_recovery_state": ["teacher_ema", "class_balanced_timeliness_uncertainty_memory", "memory_age_ledger", "robust_bn"]
+    }
+  }
+}

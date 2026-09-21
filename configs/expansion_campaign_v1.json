@@ -1,0 +1,51 @@
+{
+  "manifest_version": "1.0.0",
+  "protocol_version": "2.0.0",
+  "evidence_label": "FORMAL_EXPANSION",
+  "datasets": ["cifar10", "cifar100"],
+  "dataset_root": "data",
+  "seeds": [0, 1, 2, 3, 4],
+  "model": {
+    "architecture": "cifar_resnet18",
+    "source_epochs": 30,
+    "optimizer": "SGD",
+    "learning_rate": 0.1,
+    "weight_decay": 0.0005,
+    "batch_size": 256
+  },
+  "methods": ["source", "tent", "anchor", "ema_restore", "periodic_reset"],
+  "method_classification": {
+    "source": "non-adaptive baseline",
+    "tent": "published baseline core behavior",
+    "anchor": "diagnostic control",
+    "ema_restore": "diagnostic control; not claimed as CoTTA",
+    "periodic_reset": "diagnostic control"
+  },
+  "published_modern_baselines_pending_independent_reproduction": ["CoTTA", "EATA", "SAR", "RoTTA"],
+  "trajectories": ["A-B-A", "A-B-C-A"],
+  "shift_families": ["noise", "brightness", "contrast", "blur", "rotation"],
+  "severities": [1, 2],
+  "batch_size": 128,
+  "adaptation_passes": 1,
+  "adaptation_learning_rate": 0.001,
+  "ablations": {
+    "learning_rate": [0.0001, 0.001, 0.01],
+    "adaptation_passes": [1, 2, 4],
+    "trajectory_length": ["A-B-A", "A-B-C-A"]
+  },
+  "prospective_mechanism": {
+    "variables": ["prediction_entropy_before_update", "gradient_norm_before_update", "update_norm", "parameter_drift"],
+    "measured_before_return_outcome": true,
+    "outcome": "clean-source accuracy before return-stage adaptation"
+  },
+  "primary_endpoint": "absolute_hysteresis_before_return_adaptation",
+  "secondary_endpoints": ["return_accuracy_after_adaptation", "target_accuracy", "entropy", "ece", "parameter_drift", "wall_clock_seconds"],
+  "labels_allowed_during_adaptation": false,
+  "retries": 2,
+  "formal_results_must_not_be_overwritten": true,
+  "stop_rules": [
+    "stop a dataset if source balanced accuracy is below 0.50 after source training",
+    "withdraw a mechanism claim if prospective predictors fail held-seed validation",
+    "do not mark modern-baseline coverage complete until independent published implementations pass"
+  ]
+}

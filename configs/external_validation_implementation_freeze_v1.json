@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "external_validation_cifar_c_v1",
+  "status": "IMPLEMENTATION_FROZEN_AWAITING_VERIFIED_EXTERNAL_DATA",
+  "frozen_at": "2026-09-18T14:12:00+08:00",
+  "scientific_protocol": {
+    "datasets": ["cifar10_c", "cifar100_c"],
+    "corruptions": 15,
+    "severities": [1, 3, 5],
+    "methods": ["source", "tent", "eata", "sar", "cotta", "rotta"],
+    "source_training_seeds": [0, 1, 2, 3, 4],
+    "independent_replication_unit": "source-training-seed",
+    "formal_trajectory": "A-B-A",
+    "formal_jobs": 2700,
+    "semantic_canary_jobs": 48,
+    "formal_admission_required": true,
+    "early_sanity_jobs": 12
+  },
+  "implementation_sha256": {
+    "external_validation_experiment.py": "sha256:00a11667cf8e54f55a35f6509e8a9fd092a67b9115accf504eda8f67cc272c39",
+    "external_validation_supervisor.py": "sha256:4e83177c37bcb43e180483959b179a558c2e67c359d91622be6ca904abd45b5b",
+    "download_cifar_c_parallel.py": "sha256:735974c82c3bb7500a838ea77c947e81bd0fec3aca79532230f52940e2049a18",
+    "prepare_cifar_c_data.py": "sha256:2ea28d60e1c7c47b044242126c04b8339d6e142932f89f0ba0112d599b382a53",
+    "configs/external_validation_cifar_c_v1.json": "sha256:e90b0b994df6d953d100a62a2b2a6d1f928340df91e0992f917be3c854028717",
+    "configs/external_cifar_c_sources.json": "sha256:8fe9c96aa1fe5c525800f7371ddb21d22076983f7ce3e4a56cdb4e8bb1459d89",
+    "run_state/download_cifar_c.ps1": "sha256:6fb81236cd80d2d9b0131efc6e0f3ea293a2d414fc6ac4aa25ede7a19ac6a7b3",
+    "publication_expansion_experiment.py": "sha256:ea20ae9d7cd8cbacd919057bf69b67e07d1694e538037f5d25daec86929fad1d",
+    "configs/modern_baseline_upstreams.json": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
+    "configs/tta_method_state_contracts.json": "sha256:8b26a1bb170cd40060149b70c9878cd7c8c3ec01932191a9e69484f029a9bbdc"
+  },
+  "source_checkpoint_sha256": {
+    "cifar10:s00": "sha256:ad125cd374cc2f34f90222ec07bd719c3c81830343e5d3cb6ba2c71d8cd72882",
+    "cifar10:s01": "sha256:b2dc707fac14d9adce527563b3db0b800b59ba066ca8ddb1321256db1a4947c6",
+    "cifar10:s02": "sha256:f56ffd48ed5123b28f3328a4eb13cff7ee8aa84d86432bf8b0e0317a69147e55",
+    "cifar10:s03": "sha256:6f6ed4981f38d2c366300b1e8ae80fd6fba2ef7fe30eaeaa23bcb5425d1fb101",
+    "cifar10:s04": "sha256:e4b16cfeb5f70c5333c12b22c3bf8b4ee7ce30d819451231c19915238ab3d4b1",
+    "cifar100:s00": "sha256:24cb9cf0b76556c8a9784c66d3e5988106417e490e8240b67438ed9bb790aa33",
+    "cifar100:s01": "sha256:0597c2b1e3f6715a9b989337b749eac15278ecdfda5625c9b761dd5903fabd68",
+    "cifar100:s02": "sha256:5ec300e3328cb369f482b231593174943465f3919aefa4ad1e9208983e16234a",
+    "cifar100:s03": "sha256:5e29566652c2b7bdcba603911a8966e5c8909a8497bf08d0c3b2af6b67bb4d58",
+    "cifar100:s04": "sha256:a09d52aec9751f13f82ac9e1894c00cc9af0a53047b9cd18c856f4564d0e1361"
+  },
+  "external_archive_identity": {
+    "CIFAR-10-C.tar": {
+      "bytes": 2918471680,
+      "md5": "56bf5dcef84df0e2308c6dcbcbbd8499"
+    },
+    "CIFAR-100-C.tar": {
+      "bytes": 2918473216,
+      "md5": "11f0ed0f1191edbf9fa23466ae6021d3"
+    }
+  },
+  "environment_at_freeze": {
+    "python": "3.13.0",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "admission_status": "PENDING_VERIFIED_DATA_AND_SEMANTIC_CANARY",
+  "publication_sufficiency": "FAIL",
+  "ready_to_submit": false
+}

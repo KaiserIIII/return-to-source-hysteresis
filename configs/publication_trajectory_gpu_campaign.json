@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_family": "tta_publication_grade_expansion",
+  "formal_v2_immutable": true,
+  "formal_v2_result_set": "formal_v2",
+  "formal_v2_paths": [
+    "results/expansion/formal_v2",
+    "run_state/expansion_formal_v2_status.json",
+    "configs/expansion_campaign_v2.json",
+    "expansion_experiment.py"
+  ],
+  "independent_replication_unit": "source-training-seed",
+  "required_gates": [
+    "source_immutability",
+    "method_state_transition",
+    "temporal_availability",
+    "provenance_binding",
+    "semantic_canary",
+    "early_sanity_audit"
+  ],
+  "trajectory_ablation_gpu_v1": {
+    "result_set": "trajectory_ablation_gpu_v1",
+    "canary_result_set": "trajectory_ablation_gpu_v1_canary",
+    "smoke_result_set": "trajectory_ablation_gpu_v1_smoke",
+    "trajectories": [
+      "A-B-A",
+      "A-B-C-A",
+      "A-B-A-B-A",
+      "A-C-B-A"
+    ],
+    "pass_counts": [1, 2, 4],
+    "learning_rates": [0.0001, 0.001, 0.01],
+    "methods": ["source", "tent", "eata", "sar", "cotta", "rotta"],
+    "datasets": ["cifar10"],
+    "seeds": [0, 1, 2, 3, 4],
+    "formal_v2_overwrite": false,
+    "device": "cuda",
+    "parent_campaign": "trajectory_ablation_v1",
+    "parent_completed_shards": 160,
+    "required_gates": [
+      "source_immutability",
+      "method_state_transition",
+      "temporal_availability",
+      "provenance_binding",
+      "semantic_canary",
+      "early_sanity_audit"
+    ]
+  }
+}

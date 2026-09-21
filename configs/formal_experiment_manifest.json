@@ -1,0 +1,23 @@
+{
+  "manifest_version": "1.0.0",
+  "protocol_version": "1.0.0",
+  "evidence_label": "FORMAL",
+  "dataset": "sklearn-digits",
+  "split": {"test_size": 0.3, "random_state": 123, "stratify": true},
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "methods": ["source", "tent", "anchor", "ema", "reset", "stochastic_restore"],
+  "trajectories": ["A-B-A", "A-B-C-A"],
+  "shift_families": ["noise", "invert_noise", "rotation", "blur"],
+  "severities": [1, 2],
+  "batch_size": 64,
+  "stage_passes": 2,
+  "adaptation": {"eta": 0.01, "anchor_lambda": 0.05, "ema_decay": 0.99, "restore_probability": 0.1},
+  "source_training": {"epochs": 30, "lr": 0.001},
+  "primary_endpoint": "absolute_hysteresis",
+  "secondary_endpoints": ["relative_hysteresis", "return_accuracy", "target_accuracy", "entropy", "ece", "parameter_drift", "feature_drift", "gradient_cosine", "update_disagreement", "wall_clock_seconds"],
+  "retries": 1,
+  "resource_policy": "CPU-first; optional CIFAR-10-C extension is deferred until Tier 1 passes",
+  "labels_allowed_during_adaptation": false,
+  "formal_results_must_not_be_overwritten": true
+}
+

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "retrieved_at": "2026-09-18T13:10:00+08:00",
+  "protocol": "standard_cifar_c",
+  "severity_block_size": 10000,
+  "severities": [1, 2, 3, 4, 5],
+  "formal_severities": [1, 3, 5],
+  "corruptions": [
+    "gaussian_noise",
+    "shot_noise",
+    "impulse_noise",
+    "defocus_blur",
+    "glass_blur",
+    "motion_blur",
+    "zoom_blur",
+    "snow",
+    "frost",
+    "fog",
+    "brightness",
+    "contrast",
+    "elastic_transform",
+    "pixelate",
+    "jpeg_compression"
+  ],
+  "datasets": {
+    "cifar10_c": {
+      "record_id": 2535967,
+      "doi": "10.5281/zenodo.2535967",
+      "license": "CC-BY-4.0",
+      "archive": "CIFAR-10-C.tar",
+      "bytes": 2918471680,
+      "md5": "56bf5dcef84df0e2308c6dcbcbbd8499",
+      "url": "https://zenodo.org/api/records/2535967/files/CIFAR-10-C.tar/content",
+      "extracted_directory": "CIFAR-10-C"
+    },
+    "cifar100_c": {
+      "record_id": 3555552,
+      "doi": "10.5281/zenodo.3555552",
+      "license": "CC-BY-4.0",
+      "archive": "CIFAR-100-C.tar",
+      "bytes": 2918473216,
+      "md5": "11f0ed0f1191edbf9fa23466ae6021d3",
+      "url": "https://zenodo.org/api/records/3555552/files/CIFAR-100-C.tar/content",
+      "extracted_directory": "CIFAR-100-C"
+    }
+  }
+}

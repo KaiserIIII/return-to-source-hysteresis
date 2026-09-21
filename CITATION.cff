@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Return-to-Source Hysteresis in Test-Time Adaptation"
+message: "If you use this artifact, cite the accompanying manuscript and repository."
+type: software
+authors:
+  - family-names: Yu
+    given-names: Yue
+version: 1.0.0
+date-released: 2026-09-21
+repository-code: "https://github.com/KaiserIIII/return-to-source-hysteresis"
+license: MIT
+keywords:
+  - test-time adaptation
+  - continual test-time adaptation
+  - reproducibility
+  - CIFAR-C

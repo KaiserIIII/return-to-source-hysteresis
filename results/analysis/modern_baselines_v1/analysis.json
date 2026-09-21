@@ -1,0 +1,587 @@
+{
+  "schema_version": "1.0.0",
+  "analysis_label": "FORMAL_MODERN_BASELINES_V1",
+  "analysis_status": "PASS",
+  "created_at": "2026-09-20T11:57:46.428928+00:00",
+  "analysis_script_sha256": "sha256:6a9f8b6bfd460129c6ced97aa24896ac750b6c16b5cab0a4ee0cab4c3faa5283",
+  "environment": {
+    "python": "3.13.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5"
+  },
+  "integrity_audit": {
+    "status": "PASS",
+    "expected_jobs": 60,
+    "observed_jobs": 60,
+    "methods": [
+      "cotta",
+      "eata",
+      "rotta",
+      "sar",
+      "source",
+      "tent"
+    ],
+    "trajectories": [
+      "A-B-A",
+      "A-B-C-A"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_shards": 10,
+    "temporal_ordered_shards": 60,
+    "provenance": {
+      "runner": "sha256:4b6081c8c67765cb9be875b71881e3cb0fb4a1317d4461567268217491a38c25",
+      "manifest": "sha256:85e5f8ea01a3246df81352eaa85f94a5ad71fc4eb0c05a66b13aeb4af111b41e",
+      "dataset": "sha256:4a909492144b016d792323f19cd239a48b01c5ffc9289e47becb3b87b39f0c9b",
+      "registry": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780"
+    },
+    "upstream": {
+      "source": {
+        "binding": "LOCAL_CONTROL_IMPLEMENTATION",
+        "registry_sha256": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
+        "provider": null
+      },
+      "tent": {
+        "binding": "LOCAL_CONTROL_IMPLEMENTATION",
+        "registry_sha256": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
+        "provider": null
+      },
+      "eata": {
+        "binding": "PINNED_UPSTREAM_BEHAVIOR_REFERENCE",
+        "registry_sha256": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
+        "provider": {
+          "repository": "https://github.com/mr-eggplant/EATA",
+          "commit": "f739b3668cc7617e9b9f1979c1a358497a3472c3",
+          "license": "MIT",
+          "paper": "Efficient Test-Time Model Adaptation without Forgetting (ICML 2022)",
+          "files": {
+            "eata.py": "sha256:f162467d300cb12a14a3c888f693b31d15b12cd116ba0edadfa6560fa8b6ef96",
+            "main.py": "sha256:5ce0e5b359fe69ce676d58fc9b682aa9b03732a2a6d03978d44fff2ca0b167c8",
+            "LICENSE": "sha256:a12fa724137f140fff24e81733054f326eddc2c02c23f3d5b37d53ce20be886b"
+          }
+        }
+      },
+      "sar": {
+        "binding": "PINNED_UPSTREAM_BEHAVIOR_REFERENCE",
+        "registry_sha256": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
+        "provider": {
+          "repository": "https://github.com/mr-eggplant/SAR",
+          "commit": "20f6e24b17525f34503510afccedc0629b67b7c4",
+          "license": "BSD-3-Clause",
+          "paper": "Towards Stable Test-Time Adaptation in Dynamic Wild World (ICLR 2023)",
+          "files": {
+            "sar.py": "sha256:0553a395ac2bc087049720f1f162789079fe5ee25aa6a1cf82b2ea6286d66eff",
+            "sam.py": "sha256:b0569de29015016996feae257d30be6cc36f80d42d0f51d4a201eb39d2491712",
+            "main.py": "sha256:738dc9fcc8f7b4fa0ea11e3aad9f5498fab38376f4311b6ecb8c6fab7222456c",
+            "LICENSE": "sha256:e04a34ed5ad6a1a54bf8cf1b5ea0bea33313809acb193e71313025aa0dd3e903"
+          }
+        }
+      },
+      "cotta": {
+        "binding": "PINNED_UPSTREAM_BEHAVIOR_REFERENCE",
+        "registry_sha256": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
+        "provider": {
+          "repository": "https://github.com/qinenergy/cotta",
+          "commit": "c212a204b32be4005092e4323105a24a29ad2952",
+          "license": "MIT",
+          "paper": "Continual Test-Time Domain Adaptation (CVPR 2022)",
+          "files": {
+            "cifar/cotta.py": "sha256:bdaa5f1a6d9713f0042cce8ee8d2853cbee1cc996d16c076785ea3d8342265b4",
+            "cifar/cfgs/cifar10/cotta.yaml": "sha256:46807b75a30408a6bbd8eea634810f5764141a873a16f551c03ccaac53cd9a4d",
+            "LICENSE": "sha256:4f535a06092e9391ad8d7ace40c21373fb4fc3f0887b9395eb247efee11f0fee"
+          }
+        }
+      },
+      "rotta": {
+        "binding": "PINNED_UPSTREAM_BEHAVIOR_REFERENCE",
+        "registry_sha256": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
+        "provider": {
+          "repository": "https://github.com/BIT-DA/RoTTA",
+          "commit": "67e34c900cdd355fc07e55edd4c577ea7b8ebcc9",
+          "license": "MIT",
+          "paper": "Robust Test-Time Adaptation in Dynamic Scenarios (CVPR 2023)",
+          "files": {
+            "core/adapter/rotta.py": "sha256:5afe615eb2d4c83900c9855ad38f285cd577be5608a72620813190d719401479",
+            "core/utils/memory.py": "sha256:32b30f2ee56c8b4e5fe8be925bbcb972d1252728dde00a16e97b2e6a56acb48e",
+            "core/utils/bn_layers.py": "sha256:73ba1aa37e76a297c1f1b7b80758ccb9c5381fa9c4bdd47775dde1527fe5f481",
+            "configs/adapter/rotta.yaml": "sha256:d47f0cf5df286284b7d4467a2a1cdacfb71af6db12b039111cb4a0e0fd8bf858",
+            "LICENSE": "sha256:d5edbb5e0461e1de8b94cbd197a7ecac7926da63629159d9a01e3aa7a0bbf82a"
+          }
+        }
+      }
+    }
+  },
+  "design": {
+    "independent_replication_unit": "source-training seed",
+    "seed_aggregation": "average both trajectories within seed before inference",
+    "bootstrap": "seed-cluster percentile bootstrap, 10000 draws",
+    "paired_test": "exact two-sided sign-flip over five seed-level differences",
+    "multiplicity": "Holm across five modern-baseline contrasts",
+    "normalization_policy": "bn_affine_frozen_stats"
+  },
+  "counts": {
+    "rows": 60,
+    "methods": 6,
+    "trajectories": 2,
+    "seeds": 5
+  },
+  "summaries": {
+    "habs": [
+      {
+        "method": "cotta",
+        "field": "habs",
+        "mean": 0.0016099999999999782,
+        "sd": 0.0013835642377569926,
+        "ci95_low": 0.0005499999999999727,
+        "ci95_high": 0.0027800000000000047,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260920,
+        "seed_values": {
+          "0": 0.0015999999999999903,
+          "1": -0.000150000000000039,
+          "2": 0.003650000000000042,
+          "3": 0.0018999999999999573,
+          "4": 0.0010499999999999399
+        }
+      },
+      {
+        "method": "eata",
+        "field": "habs",
+        "mean": 0.76329,
+        "sd": 0.004952827475291278,
+        "ci95_low": 0.759518,
+        "ci95_high": 0.7670600000000001,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260921,
+        "seed_values": {
+          "0": 0.7597,
+          "1": 0.7662,
+          "2": 0.7694500000000001,
+          "3": 0.764,
+          "4": 0.7571
+        }
+      },
+      {
+        "method": "rotta",
+        "field": "habs",
+        "mean": 1.9999999999997796e-05,
+        "sd": 7.582875444050716e-05,
+        "ci95_low": -2.9999999999996697e-05,
+        "ci95_high": 8.999999999999009e-05,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260922,
+        "seed_values": {
+          "0": -4.999999999999449e-05,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.00014999999999998348
+        }
+      },
+      {
+        "method": "sar",
+        "field": "habs",
+        "mean": 0.0022099999999999785,
+        "sd": 0.0009768572055321443,
+        "ci95_low": 0.0014699999999999492,
+        "ci95_high": 0.002950000000000008,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260923,
+        "seed_values": {
+          "0": 0.0027499999999999747,
+          "1": 0.0011499999999999289,
+          "2": 0.0033000000000000806,
+          "3": 0.00264999999999993,
+          "4": 0.0011999999999999789
+        }
+      },
+      {
+        "method": "source",
+        "field": "habs",
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260924,
+        "seed_values": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      {
+        "method": "tent",
+        "field": "habs",
+        "mean": 0.005919999999999981,
+        "sd": 0.0019392653248073179,
+        "ci95_low": 0.0042999999999999705,
+        "ci95_high": 0.00726,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260925,
+        "seed_values": {
+          "0": 0.006149999999999989,
+          "1": 0.005799999999999972,
+          "2": 0.007800000000000029,
+          "3": 0.00709999999999994,
+          "4": 0.0027499999999999747
+        }
+      }
+    ],
+    "hupd": [
+      {
+        "method": "cotta",
+        "field": "hupd",
+        "mean": 0.0016099999999999782,
+        "sd": 0.0013835642377569926,
+        "ci95_low": 0.0005499999999999727,
+        "ci95_high": 0.0027800000000000047,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260960,
+        "seed_values": {
+          "0": 0.0015999999999999903,
+          "1": -0.000150000000000039,
+          "2": 0.003650000000000042,
+          "3": 0.0018999999999999573,
+          "4": 0.0010499999999999399
+        }
+      },
+      {
+        "method": "eata",
+        "field": "hupd",
+        "mean": 0.76329,
+        "sd": 0.004952827475291278,
+        "ci95_low": 0.7594399999999999,
+        "ci95_high": 0.7670600000000001,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260961,
+        "seed_values": {
+          "0": 0.7597,
+          "1": 0.7662,
+          "2": 0.7694500000000001,
+          "3": 0.764,
+          "4": 0.7571
+        }
+      },
+      {
+        "method": "rotta",
+        "field": "hupd",
+        "mean": 1.9999999999997796e-05,
+        "sd": 7.582875444050716e-05,
+        "ci95_low": -2.9999999999996697e-05,
+        "ci95_high": 8.999999999999009e-05,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260962,
+        "seed_values": {
+          "0": -4.999999999999449e-05,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.00014999999999998348
+        }
+      },
+      {
+        "method": "sar",
+        "field": "hupd",
+        "mean": 0.0022099999999999785,
+        "sd": 0.0009768572055321443,
+        "ci95_low": 0.0014699999999999492,
+        "ci95_high": 0.002950000000000008,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260963,
+        "seed_values": {
+          "0": 0.0027499999999999747,
+          "1": 0.0011499999999999289,
+          "2": 0.0033000000000000806,
+          "3": 0.00264999999999993,
+          "4": 0.0011999999999999789
+        }
+      },
+      {
+        "method": "source",
+        "field": "hupd",
+        "mean": 0.0,
+        "sd": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260964,
+        "seed_values": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      {
+        "method": "tent",
+        "field": "hupd",
+        "mean": 0.005919999999999981,
+        "sd": 0.0019392653248073179,
+        "ci95_low": 0.004229999999999967,
+        "ci95_high": 0.007239999999999957,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260965,
+        "seed_values": {
+          "0": 0.006149999999999989,
+          "1": 0.005799999999999972,
+          "2": 0.007800000000000029,
+          "3": 0.00709999999999994,
+          "4": 0.0027499999999999747
+        }
+      }
+    ],
+    "target_accuracy": [
+      {
+        "method": "cotta",
+        "field": "target_accuracy",
+        "mean": 0.634525,
+        "sd": 0.0067826294679865975,
+        "ci95_low": 0.6288750000000001,
+        "ci95_high": 0.6397200000000001,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260940,
+        "seed_values": {
+          "0": 0.62405,
+          "1": 0.634225,
+          "2": 0.633725,
+          "3": 0.6385,
+          "4": 0.6421250000000001
+        }
+      },
+      {
+        "method": "eata",
+        "field": "target_accuracy",
+        "mean": 0.12362499999999998,
+        "sd": 0.006291735650835946,
+        "ci95_low": 0.11869,
+        "ci95_high": 0.12840999999999997,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260941,
+        "seed_values": {
+          "0": 0.12685000000000002,
+          "1": 0.11957499999999999,
+          "2": 0.115675,
+          "3": 0.131875,
+          "4": 0.12415000000000001
+        }
+      },
+      {
+        "method": "rotta",
+        "field": "target_accuracy",
+        "mean": 0.636635,
+        "sd": 0.005653278915815129,
+        "ci95_low": 0.6322400000000001,
+        "ci95_high": 0.64128,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260942,
+        "seed_values": {
+          "0": 0.62895,
+          "1": 0.6375,
+          "2": 0.6348750000000001,
+          "3": 0.637175,
+          "4": 0.644675
+        }
+      },
+      {
+        "method": "sar",
+        "field": "target_accuracy",
+        "mean": 0.638945,
+        "sd": 0.006923294013690282,
+        "ci95_low": 0.6339400000000001,
+        "ci95_high": 0.64428,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260943,
+        "seed_values": {
+          "0": 0.6315500000000001,
+          "1": 0.6368499999999999,
+          "2": 0.6348750000000001,
+          "3": 0.64225,
+          "4": 0.6492
+        }
+      },
+      {
+        "method": "source",
+        "field": "target_accuracy",
+        "mean": 0.6366099999999999,
+        "sd": 0.005658030797017624,
+        "ci95_low": 0.6322949999999999,
+        "ci95_high": 0.641265,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260944,
+        "seed_values": {
+          "0": 0.62895,
+          "1": 0.6375,
+          "2": 0.6348,
+          "3": 0.6371249999999999,
+          "4": 0.644675
+        }
+      },
+      {
+        "method": "tent",
+        "field": "target_accuracy",
+        "mean": 0.625405,
+        "sd": 0.013477381514967992,
+        "ci95_low": 0.615405,
+        "ci95_high": 0.6354050000000001,
+        "n_seeds": 5,
+        "draws": 10000,
+        "rng_seed": 20260945,
+        "seed_values": {
+          "0": 0.611875,
+          "1": 0.627175,
+          "2": 0.61305,
+          "3": 0.6305000000000001,
+          "4": 0.644425
+        }
+      }
+    ],
+    "trajectory": [
+      {
+        "trajectory": "A-B-A",
+        "habs": 0.12891666666666662,
+        "target_accuracy": 0.5179133333333332
+      },
+      {
+        "trajectory": "A-B-C-A",
+        "habs": 0.12876666666666664,
+        "target_accuracy": 0.5806683333333332
+      }
+    ]
+  },
+  "contrasts": [
+    {
+      "mean": 0.005919999999999981,
+      "sd": 0.0019392653248073179,
+      "ci95_low": 0.004229999999999967,
+      "ci95_high": 0.00726,
+      "n_seeds": 5,
+      "draws": 10000,
+      "rng_seed": 20261020,
+      "method": "tent",
+      "value": "habs",
+      "seed_differences": {
+        "0": 0.006149999999999989,
+        "1": 0.005799999999999972,
+        "2": 0.007800000000000029,
+        "3": 0.00709999999999994,
+        "4": 0.0027499999999999747
+      },
+      "p_value_two_sided": 0.0625,
+      "p_value_holm": 0.3125
+    },
+    {
+      "mean": 0.76329,
+      "sd": 0.004952827475291278,
+      "ci95_low": 0.75952,
+      "ci95_high": 0.7670600000000001,
+      "n_seeds": 5,
+      "draws": 10000,
+      "rng_seed": 20261021,
+      "method": "eata",
+      "value": "habs",
+      "seed_differences": {
+        "0": 0.7597,
+        "1": 0.7662,
+        "2": 0.7694500000000001,
+        "3": 0.764,
+        "4": 0.7571
+      },
+      "p_value_two_sided": 0.0625,
+      "p_value_holm": 0.3125
+    },
+    {
+      "mean": 0.0022099999999999785,
+      "sd": 0.0009768572055321443,
+      "ci95_low": 0.0014699999999999492,
+      "ci95_high": 0.002950000000000008,
+      "n_seeds": 5,
+      "draws": 10000,
+      "rng_seed": 20261022,
+      "method": "sar",
+      "value": "habs",
+      "seed_differences": {
+        "0": 0.0027499999999999747,
+        "1": 0.0011499999999999289,
+        "2": 0.0033000000000000806,
+        "3": 0.00264999999999993,
+        "4": 0.0011999999999999789
+      },
+      "p_value_two_sided": 0.0625,
+      "p_value_holm": 0.3125
+    },
+    {
+      "mean": 0.0016099999999999782,
+      "sd": 0.0013835642377569926,
+      "ci95_low": 0.0005699999999999484,
+      "ci95_high": 0.0027800000000000047,
+      "n_seeds": 5,
+      "draws": 10000,
+      "rng_seed": 20261023,
+      "method": "cotta",
+      "value": "habs",
+      "seed_differences": {
+        "0": 0.0015999999999999903,
+        "1": -0.000150000000000039,
+        "2": 0.003650000000000042,
+        "3": 0.0018999999999999573,
+        "4": 0.0010499999999999399
+      },
+      "p_value_two_sided": 0.125,
+      "p_value_holm": 0.3125
+    },
+    {
+      "mean": 1.9999999999997796e-05,
+      "sd": 7.582875444050716e-05,
+      "ci95_low": -2.9999999999996697e-05,
+      "ci95_high": 8.999999999999009e-05,
+      "n_seeds": 5,
+      "draws": 10000,
+      "rng_seed": 20261024,
+      "method": "rotta",
+      "value": "habs",
+      "seed_differences": {
+        "0": -4.999999999999449e-05,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.00014999999999998348
+      },
+      "p_value_two_sided": 1.0,
+      "p_value_holm": 1.0
+    }
+  ],
+  "negative_results": [
+    "The campaign does not support a universal method ranking.",
+    "EATA shows severe instability under the registered independent reimplementation and fixed-normalization protocol; this is an implementation-sensitive signal, not a universal failure claim."
+  ],
+  "artifacts": {
+    "raw_status": "<local-run-state>/publication_modern_baselines_v1_status.json",
+    "rows": "rows.csv"
+  }
+}

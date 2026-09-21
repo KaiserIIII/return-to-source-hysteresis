@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "campaign_id": "trajectory_ablation_gpu_v1",
+  "status": "FROZEN_PRIMARY_RESULTS",
+  "frozen_at": "2026-09-20T11:57:48.415775+00:00",
+  "status_sha256": "sha256:58cb9fef3ccfb1dea837859b97fecbe77dcdfadeb20ca7422d7b8cbafde39dbd",
+  "result_root_digest": "sha256:ef45a1c4dad47179e7444deb8ff14036f11a0dee8c47de249ef9f8c0cee10f18",
+  "shard_count": 1080,
+  "provenance": {
+    "runner_sha256": "sha256:ea20ae9d7cd8cbacd919057bf69b67e07d1694e538037f5d25daec86929fad1d",
+    "supervisor_sha256": "sha256:0f3320e4d4642f7c79ec103d78f1907109f235adc0b7f68b92ae864ab2e6c0d8",
+    "manifest_sha256": "sha256:c087475522cc61dad640e83b29c2bd848b599f22a5a73bcb008064f2bd91e92d",
+    "dataset_provenance_sha256": "sha256:4a909492144b016d792323f19cd239a48b01c5ffc9289e47becb3b87b39f0c9b",
+    "method_registry_sha256": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
+    "method_contracts_sha256": "sha256:8b26a1bb170cd40060149b70c9878cd7c8c3ec01932191a9e69484f029a9bbdc"
+  },
+  "device": "cuda",
+  "preserved_interrupted_jobs": [
+    {
+      "job_id": "trajectory_ablation_gpu_v1_cifar10_s00_cotta_ABA_bn_affine_frozen_stats_p4_lr0.0001_v1",
+      "error": ""
+    },
+    {
+      "job_id": "trajectory_ablation_gpu_v1_cifar10_s00_cotta_ABA_bn_affine_frozen_stats_p2_lr0.01_v1",
+      "error": ""
+    }
+  ],
+  "unresolved_failed_jobs": [],
+  "analysis_script_sha256": "sha256:897210c6c66c8ba83954966ae4caf2ced3c29657c70c7f5bfd9166df83495407"
+}
