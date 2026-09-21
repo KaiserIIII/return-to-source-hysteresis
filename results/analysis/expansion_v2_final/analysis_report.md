@@ -1,6 +1,6 @@
 # Corrected Expansion Analysis
 
-Generated: `2026-09-09T04:22:03.791115+00:00`
+Generated: `2026-09-21T09:59:06.109646+00:00`
 
 The analysis passed structural, hash, dataset, checkpoint, protocol, timing, and source-invariant checks before computing statistics.
 

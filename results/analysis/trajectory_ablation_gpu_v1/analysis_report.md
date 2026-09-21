@@ -1,6 +1,6 @@
 # Trajectory Ablation GPU v1 Analysis
 
-Generated: `2026-09-20T11:57:47.194895+00:00`
+Generated: `2026-09-21T09:58:22.406881+00:00`
 
 All 1,080 formal shards passed hash, provenance, temporal-order, mutation-contract, metric-range, and source-immutability checks.
 Inference uses five source-training seeds as the independent replication units. Experimental rows are not treated as independent samples.

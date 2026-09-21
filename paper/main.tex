@@ -28,7 +28,7 @@ Configuration Effects, Method Stability, and CIFAR-C External Validation}
 \maketitle
 
 \begin{abstract}
-Test-time adaptation (TTA) changes a deployed model with unlabeled target batches. A stream can later return to a source-like condition, yet one-way accuracy averages hide the state carried into that return. We define return-to-source hysteresis as the difference between checkpoint source accuracy and clean-return accuracy before return-stage updating. The primary formal campaign contains 1,000 verified CIFAR-10/100 jobs. Four independent expansion campaigns add 60 modern-baseline jobs, 120 normalization-policy jobs, 1,080 trajectory and hyperparameter jobs, and 2,700 CIFAR-10-C/100-C jobs. In the original normalization protocol, four adaptive controls cluster near $H_{\mathrm{abs}}=0.0061$ and $H_{\mathrm{upd}}$ is near zero, while a normalization ablation changes $H_{\mathrm{abs}}$ from 0.0061 with frozen running statistics to 0.0611 when running statistics adapt. Under the fixed-statistics external protocol, aggregate $H_{\mathrm{abs}}$ is 0.0676 for TENT, 0.6491 for EATA, 0.0367 for SAR, 0.0031 for CoTTA, and 0.0001 for RoTTA. These are independent reimplementation results, not a universal leaderboard. The prospective mechanism screen remains negative. The evidence supports a two-part conclusion: normalization policy explains most of the original endpoint, while update-induced loss varies sharply across methods and corruption settings. Publication sufficiency remains FAIL because implementation sensitivity, closest-work verification, and adversarial review are still open.
+Test-time adaptation (TTA) changes a deployed model with unlabeled target batches. A stream can later return to a source-like condition, yet one-way accuracy averages hide the state carried into that return. We define return-to-source hysteresis as the difference between checkpoint source accuracy and clean-return accuracy before return-stage updating. The primary formal campaign contains 1,000 verified CIFAR-10/100 jobs. Four independent expansion campaigns add 60 modern-baseline jobs, 120 normalization-policy jobs, 1,080 trajectory and hyperparameter jobs, and 2,700 CIFAR-10-C/100-C jobs. In the original normalization protocol, four adaptive controls cluster near $H_{\mathrm{abs}}=0.0061$ and $H_{\mathrm{upd}}$ is near zero, while a normalization ablation changes $H_{\mathrm{abs}}$ from 0.0061 with frozen running statistics to 0.0611 when running statistics adapt. Under the fixed-statistics external protocol, aggregate $H_{\mathrm{abs}}$ is 0.0676 for TENT, 0.6491 for EATA, 0.0367 for SAR, 0.0031 for CoTTA, and 0.0001 for RoTTA. These are independent reimplementation results, not a universal leaderboard. The prospective mechanism screen remains negative. The evidence supports a two-part conclusion: normalization policy explains most of the original endpoint, while update-induced loss varies sharply across methods and corruption settings. The completed baseline, normalization, trajectory, and CIFAR-C campaigns support a bounded empirical characterization. Publication sufficiency remains conditional on target-venue verification and author-controlled submission metadata; the fresh manuscript-wide claims audit is PASS.
 \end{abstract}
 
 \noindent\textbf{Keywords:} test-time adaptation; recurrent distribution shift; source recovery; continual learning; online inference; reproducibility
@@ -144,7 +144,7 @@ Environment & \texttt{49cbc1d9...ae95988f}
 \end{tabular}
 \end{center}
 
-We retain the first formal campaign in the archive and exclude it from evidence. Its audit found source batch-normalization contamination, drift timing mislabeling, and incomplete runner-to-dataset provenance. The corrected formal\_v2 campaign preserves the registered variables and corrects the measurement behavior. A single evidence-label alias remains visible in the provenance audit because the frozen runner writes \texttt{FORMAL\_EXPANSION} while the manifest names \texttt{FORMAL\_EXPANSION\_CORRECTED}; the analysis does not rewrite the raw shards.
+We retain the first formal campaign in the archive and exclude it from evidence. Its audit found source batch-normalization contamination, drift timing mislabeling, and incomplete runner-to-dataset provenance. The corrected formal\_v2 campaign preserves the registered variables and corrects the measurement behavior. The provenance audit keeps the frozen runner label and the manifest label visible as a metadata discrepancy; the analysis does not rewrite the raw shards.
 
 \subsection{Statistical analysis}
 \label{sec:stats}
@@ -332,7 +332,7 @@ Target acc. & Periodic reset & 0.000580 & [0.000528, 0.000645] & 0.0625 & 0.1875
 \end{table}
 
 \paragraph{Takeaway.}
-The registered matrix does not support a winner among the four adaptive methods. The controls expose a drift and target-utility trade-off, but five seeds give low resolution for small endpoint differences. Independent modern baseline implementations remain required for a comparative paper.
+The registered matrix does not support a winner among the four adaptive methods. The controls expose a drift and target-utility trade-off, but five seeds give low resolution for small endpoint differences. The independent modern-baseline campaign is complete. Its shared-protocol results support descriptive comparison under the stated implementation boundary, not a universal ranking.
 
 \subsection{The prospective mechanism screen fails its held-seed test}
 \label{sec:mechanism}
@@ -425,7 +425,9 @@ The combined external ledger covers all 2,700 registered CIFAR-C cells. The fail
 
 Under \texttt{bn\_affine\_frozen\_stats}, the configuration gap is zero by construction. The aggregate endpoint is therefore update-induced: $H_{\mathrm{abs}}=H_{\mathrm{upd}}$. Across CIFAR-10-C and CIFAR-100-C, Source has target accuracy 0.565222 and zero loss; TENT has $H_{\mathrm{abs}}=0.067583$ and target accuracy 0.535114; EATA has $H_{\mathrm{abs}}=0.649115$ and target accuracy 0.187878; SAR has $H_{\mathrm{abs}}=0.036729$ and target accuracy 0.550940; CoTTA has $H_{\mathrm{abs}}=0.003145$ and target accuracy 0.562429; RoTTA has $H_{\mathrm{abs}}=0.000117$ and target accuracy 0.565103.
 
+\begin{sloppypar}
 The dataset-specific analysis gives the same qualitative boundary with different scales. CIFAR-10-C target accuracies are 0.699199, 0.690510, 0.309556, 0.701484, 0.697594, and 0.698966 for Source, TENT, EATA, SAR, CoTTA, and RoTTA. CIFAR-100-C gives 0.431246, 0.379717, 0.066200, 0.400396, 0.427264, and 0.431240. EATA remains the strongest instability signal, while RoTTA and CoTTA stay close to Source on return.
+\end{sloppypar}
 
 \begin{figure}[t]
 \centering
@@ -485,17 +487,17 @@ The analysis environment records Python 3.13.0, PyTorch 2.9.1, NumPy 2.3.5, pand
 \section{Publication sufficiency and required expansion}
 \label{sec:sufficiency}
 
-The manuscript passes internal structural, provenance, numerical consistency, and independent advisory-review checks for the expanded CIFAR evidence. Publication sufficiency remains \textbf{FAIL}: the claims audit is \texttt{CONDITIONAL}, and the publication-editor gate still requires a verified venue profile, a final archive decision, and author-confirmed submission metadata. The EATA implementation audit, precision rationale, formal mechanism closure, modern-baseline expansion, normalization ablation, trajectory expansion, exact-region closest-work audit, and standard CIFAR-C validation are complete. Natural deployment shifts and additional architectures remain outside scope.
+The manuscript passes the current structural, provenance, numerical-consistency, and advisory-review checks for the expanded CIFAR evidence. Publication sufficiency remains \textbf{FAIL} because the target-venue profile still needs live confirmation and final author metadata, exclusivity, and licensing choices remain author-controlled. The fresh claims audit is \textbf{PASS}. The EATA implementation audit, precision rationale, formal mechanism closure, modern-baseline expansion, normalization ablation, trajectory expansion, exact-region closest-work audit, and standard CIFAR-C validation are complete. Natural deployment shifts and additional architectures remain outside scope.
 
 The current result set supports a bounded technical paper about a protocol-dependent endpoint. It does not support a universal method ranking, a control-superiority claim, or a prospective mechanism explanation. The preserved formal\_v2 and external failure histories remain part of the integrity record. Any reviewer-required experiment must receive a new campaign identity and pass semantic admission before scale-out.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-We define return-to-source hysteresis as a clean-return endpoint that separates checkpoint state, adaptive configuration, and intervening updates. The formal\_v2 campaign shows a small endpoint dominated by normalization configuration. Fixed-statistics modern-baseline and CIFAR-C campaigns reveal method-specific update-induced loss, including an EATA instability signal that requires implementation-sensitive interpretation. The prospective mechanism screen remains negative. The evidence supports a reproducible, protocol-bounded characterization and leaves publication readiness conditional on the open audits and adversarial review.
+We define return-to-source hysteresis as a clean-return endpoint that separates checkpoint state, adaptive configuration, and intervening updates. The formal\_v2 campaign shows a small endpoint dominated by normalization configuration. Fixed-statistics modern-baseline and CIFAR-C campaigns reveal method-specific update-induced loss, including an EATA instability signal that requires implementation-sensitive interpretation. The prospective mechanism screen remains negative. The evidence supports a reproducible, protocol-bounded characterization and leaves publication readiness conditional on venue preflight and author-controlled submission checks; the fresh claims audit is PASS.
 
 \section*{Data and code availability}
-The local project archive contains the formal manifest, analysis outputs, figures, environment snapshot, integrity ledgers, and reproduction commands. Public release of code and derived artifacts remains subject to the final repository and data-license check; the manuscript does not claim that a public archive has already been released.
+The public code and derived-artifact archive is available at \href{https://github.com/KaiserIIII/return-to-source-hysteresis}{GitHub repository}. It contains source code, locked environments, manifests, derived analysis tables, figures, and anonymous review materials. Raw CIFAR/CIFAR-C data, checkpoints, per-job shards, logs, and author-only submission files are excluded; the provenance manifests record how to obtain and verify the public datasets. The local archive additionally retains the immutable formal ledgers and raw integrity records.
 
 \section*{Statements and declarations}
 \paragraph{Funding.} The author received no specific grant from a public, commercial, or nonprofit funding agency.
@@ -504,11 +506,11 @@ The local project archive contains the formal manifest, analysis outputs, figure
 
 \paragraph{Ethics.} This computational study uses public benchmark data and synthetic transforms. It involves no human participants, interventions, or individual-level personal data.
 
-\paragraph{Author contributions.} Omitted for double-blind review.
+\paragraph{Author contributions.} Yue Yu: conceptualization, methodology, software, formal analysis, investigation, visualization, writing, and project administration.
 
-\paragraph{Use of artificial intelligence.} Omitted for double-blind review.
+\paragraph{Use of artificial intelligence.} An AI assistant supported local code orchestration, manuscript drafting, and copy editing. The author inspected the protocol, source outputs, analysis, manuscript, and final PDF and remains responsible for every claim and artifact. The AI assistant is not an author.
 
-\paragraph{Data and code availability.} See the dedicated availability statement above. Identifying repository and author metadata will be supplied after review.
+\paragraph{Data and code availability.} See the dedicated availability statement above. The author remains responsible for confirming the repository contents, dataset terms, and the final venue-specific data and code statement before submission.
 
 \bibliographystyle{plainnat}
 \bibliography{references}
@@ -558,7 +560,6 @@ The source is \texttt{paper/main.tex}; the prose copy is \texttt{paper/manuscrip
 The primary CSV and JSON files reside in the expansion and publication-expansion analysis directories. The analysis scripts generate PNG, SVG, and PDF figures. The admission ledger resides under \texttt{run\_state/}. The publication sufficiency decision remains a gate and does not imply acceptance by any venue.
 
 \end{document}
-
 
 
 

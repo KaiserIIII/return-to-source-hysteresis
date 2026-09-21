@@ -1,6 +1,6 @@
 # Normalization Ablation v1 Analysis
 
-Generated: `2026-09-20T11:57:46.515375+00:00`
+Generated: `2026-09-21T09:58:21.757639+00:00`
 
 The 120 raw shards passed hash, provenance, temporal, mutation, metric-range, and source-immutability audits.
 Inference uses source-training seed as the independent replication unit; rows are descriptive only.

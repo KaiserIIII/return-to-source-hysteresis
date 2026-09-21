@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "analysis_label": "TRAJECTORY_ABLATION_GPU_V1_ANALYSIS",
   "analysis_status": "PASS",
-  "created_at": "2026-09-20T11:57:47.194895+00:00",
+  "created_at": "2026-09-21T09:58:22.406881+00:00",
   "design": {
     "independent_replication_unit": "source-training-seed",
     "n_independent_seeds": 5,
@@ -37,7 +37,7 @@
       "method_registry_sha256": "sha256:febafded64bc9ff6e08132fab841b865ff709a0479268967b433a27230398780",
       "method_contracts_sha256": "sha256:8b26a1bb170cd40060149b70c9878cd7c8c3ec01932191a9e69484f029a9bbdc"
     },
-    "status_sha256": "sha256:58cb9fef3ccfb1dea837859b97fecbe77dcdfadeb20ca7422d7b8cbafde39dbd"
+    "status_sha256": "sha256:44ba01e83eb32cd4f72ba0d0ab1dc266bb175febfd9b3246e0773a3d7896f890"
   },
   "coverage": {
     "status": "PASS",

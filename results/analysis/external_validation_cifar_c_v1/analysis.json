@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "analysis_label": "FORMAL_EXTERNAL_VALIDATION_CIFAR_C",
   "analysis_status": "PASS",
-  "created_at": "2026-09-20T11:57:47.776288+00:00",
+  "created_at": "2026-09-21T09:58:22.953061+00:00",
   "analysis_script_sha256": "sha256:4b97d8e5bd0e2b7039da5c3dfa60f08d580e23625b4eba6e04d774093905fb38",
   "environment": {
     "python": "3.13.0",
@@ -2366,11 +2366,11 @@
         },
         {
           "path": "results\\analysis\\external_validation_cifar_c_v1\\figures\\external_cifar100_c_method_summary.svg",
-          "sha256": "sha256:a52072012f0bbd2d817932110be13c2ecc7689f14c27d2c39c620d05da8e3b6e"
+          "sha256": "sha256:981bc9b567c8d2534f70e1892c2ef8490ce632536b6c3962d630fd70a32d1d40"
         },
         {
           "path": "results\\analysis\\external_validation_cifar_c_v1\\figures\\external_cifar100_c_method_summary.pdf",
-          "sha256": "sha256:f0b3a9abcaadf3313a689fa61714159e25954f25b5fb3da9a684d8a4deca9015"
+          "sha256": "sha256:a41e810c268ff8193322d7a93b1e950a3cf20ddd3f917f73f9d5f550ae507fcf"
         }
       ]
     },
@@ -2384,11 +2384,11 @@
         },
         {
           "path": "results\\analysis\\external_validation_cifar_c_v1\\figures\\external_cifar10_c_method_summary.svg",
-          "sha256": "sha256:5137be0050f42b5db2e4130bbc49c5abb0d57aae766eef3cbf7c4264345b2aa7"
+          "sha256": "sha256:c9451f09cbeb9083df931535e61e6b268fbc7e51f3173efba374936da55f229d"
         },
         {
           "path": "results\\analysis\\external_validation_cifar_c_v1\\figures\\external_cifar10_c_method_summary.pdf",
-          "sha256": "sha256:3fde616475acfeee84fcc7fe980a4ddad078428a3d3747094bdb53fb7d83a5eb"
+          "sha256": "sha256:c7552e2e1f88b142bee51b5316bdac3427ced42cc7bc4a4112e5b4f71705f42c"
         }
       ]
     },
@@ -2402,11 +2402,11 @@
         },
         {
           "path": "results\\analysis\\external_validation_cifar_c_v1\\figures\\external_cifar_c_shift_method_heatmap.svg",
-          "sha256": "sha256:a0b549c38d98a90c7cafdbf6ba39f65bf993c88ca926d6b3e5dd1e67f0d7f9e0"
+          "sha256": "sha256:6ddd85dba3bd90f998ab62daae23193ce989d7f11ab50ff653eadfd051d5951e"
         },
         {
           "path": "results\\analysis\\external_validation_cifar_c_v1\\figures\\external_cifar_c_shift_method_heatmap.pdf",
-          "sha256": "sha256:4e818af97b4b268ed22f8651796d9a97a210ca38441030401fdf8eff396b326c"
+          "sha256": "sha256:9639d337a1f0190888f72bd6b7a9f0b13dfc63b65d25fed0a6524ce5ffa238f9"
         }
       ]
     }

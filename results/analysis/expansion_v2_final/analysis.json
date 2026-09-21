@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "analysis_label": "FORMAL_EXPANSION_V2_ANALYSIS",
   "analysis_status": "PASS_WITH_METADATA_ALIAS",
-  "created_at": "2026-09-09T04:22:03.791115+00:00",
+  "created_at": "2026-09-21T09:59:06.109646+00:00",
   "analysis_script_sha256": "sha256:324858c6c37411a8b071eb581de7fc2a8067d603e98eaad88cb949c02cf3b43a",
   "environment": {
     "python": "3.13.0",
@@ -1528,11 +1528,11 @@
         },
         {
           "path": "results\\analysis\\expansion_v2_final\\figures\\expansion_return_loss.svg",
-          "sha256": "sha256:9b9d56ea891d6ceaa450553c6c66a308c2bed392ce36f44be45031140cfdcfdc"
+          "sha256": "sha256:9652afb98e06297c495cb86f0259103e670edccdd0da0c7e887b8a922bfec0a4"
         },
         {
           "path": "results\\analysis\\expansion_v2_final\\figures\\expansion_return_loss.pdf",
-          "sha256": "sha256:572f041306a9c8ab563fb1c019a1e64bac12e1c62e88d389af67013450b86eec"
+          "sha256": "sha256:a4d239ada94b5d87f0898931966278061f0853e2771f25d17e6be2a9d26c49bb"
         }
       ]
     },
@@ -1546,11 +1546,11 @@
         },
         {
           "path": "results\\analysis\\expansion_v2_final\\figures\\expansion_target_return_pareto.svg",
-          "sha256": "sha256:7e96db8bb5d12e83436b1ac5dfcadf0daa0533498b69166eb1b50bf6b8665571"
+          "sha256": "sha256:a0c652b0ec96149f4ef666c22501f2b0d3ef30c6957eaf8717938517da024088"
         },
         {
           "path": "results\\analysis\\expansion_v2_final\\figures\\expansion_target_return_pareto.pdf",
-          "sha256": "sha256:553c968221496c9f3f24867b56d8f71d0f03a152175687139b46ccbd80cc3105"
+          "sha256": "sha256:aba2f1367b7a19f6c787d5ff08012fedaddc78033d56cff503f306d547f31819"
         }
       ]
     },
@@ -1564,11 +1564,11 @@
         },
         {
           "path": "results\\analysis\\expansion_v2_final\\figures\\expansion_shift_method_heatmap.svg",
-          "sha256": "sha256:b890311e7c77540167f820fe344bedd5100de04177137667be9c7d5439199435"
+          "sha256": "sha256:969d0ccdf7de2b72bbe1f3d4b1f808e25005d32e798fe5ce419573e276f84429"
         },
         {
           "path": "results\\analysis\\expansion_v2_final\\figures\\expansion_shift_method_heatmap.pdf",
-          "sha256": "sha256:e1cede7052ae4f5a20c97b13b8683a8daf4d509cf49097f3750c35d772b3bc6f"
+          "sha256": "sha256:6168929c43c101006e2252d4dcd9012aef5ce3d41b65ab7c0c9c9aa756a2bb92"
         }
       ]
     },
@@ -1582,11 +1582,11 @@
         },
         {
           "path": "results\\analysis\\expansion_v2_final\\figures\\expansion_mechanism_screen.svg",
-          "sha256": "sha256:d0175071f6ce89ba723b85431a842099123f6900fe7772f8dedf90a7681c6d93"
+          "sha256": "sha256:5d89b6cbf51fb3da0b6df2ae75267e04f085dd63601c5d9a88aa3f21ad185de3"
         },
         {
           "path": "results\\analysis\\expansion_v2_final\\figures\\expansion_mechanism_screen.pdf",
-          "sha256": "sha256:7249d671e6bb3d93024fd1272e14e8e104a736e8cdec073cef33b8eddc8f3713"
+          "sha256": "sha256:9868eebe06be6dce06552a82f495abcb863b121d08b1c0961f3f207550af88a3"
         }
       ]
     }

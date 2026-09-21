@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "analysis_label": "FORMAL_MODERN_BASELINES_V1",
   "analysis_status": "PASS",
-  "created_at": "2026-09-20T11:57:46.428928+00:00",
+  "created_at": "2026-09-21T09:59:09.880183+00:00",
   "analysis_script_sha256": "sha256:6a9f8b6bfd460129c6ced97aa24896ac750b6c16b5cab0a4ee0cab4c3faa5283",
   "environment": {
     "python": "3.13.0",
@@ -138,10 +138,10 @@
         "mean": 0.0016099999999999782,
         "sd": 0.0013835642377569926,
         "ci95_low": 0.0005499999999999727,
-        "ci95_high": 0.0027800000000000047,
+        "ci95_high": 0.0027200000000000115,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260920,
+        "rng_seed": 20260907,
         "seed_values": {
           "0": 0.0015999999999999903,
           "1": -0.000150000000000039,
@@ -155,11 +155,11 @@
         "field": "habs",
         "mean": 0.76329,
         "sd": 0.004952827475291278,
-        "ci95_low": 0.759518,
+        "ci95_low": 0.75944,
         "ci95_high": 0.7670600000000001,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260921,
+        "rng_seed": 20260908,
         "seed_values": {
           "0": 0.7597,
           "1": 0.7662,
@@ -177,7 +177,7 @@
         "ci95_high": 8.999999999999009e-05,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260922,
+        "rng_seed": 20260909,
         "seed_values": {
           "0": -4.999999999999449e-05,
           "1": 0.0,
@@ -195,7 +195,7 @@
         "ci95_high": 0.002950000000000008,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260923,
+        "rng_seed": 20260910,
         "seed_values": {
           "0": 0.0027499999999999747,
           "1": 0.0011499999999999289,
@@ -213,7 +213,7 @@
         "ci95_high": 0.0,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260924,
+        "rng_seed": 20260911,
         "seed_values": {
           "0": 0.0,
           "1": 0.0,
@@ -228,10 +228,10 @@
         "mean": 0.005919999999999981,
         "sd": 0.0019392653248073179,
         "ci95_low": 0.0042999999999999705,
-        "ci95_high": 0.00726,
+        "ci95_high": 0.007239999999999957,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260925,
+        "rng_seed": 20260912,
         "seed_values": {
           "0": 0.006149999999999989,
           "1": 0.005799999999999972,
@@ -251,7 +251,7 @@
         "ci95_high": 0.0027800000000000047,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260960,
+        "rng_seed": 20260947,
         "seed_values": {
           "0": 0.0015999999999999903,
           "1": -0.000150000000000039,
@@ -269,7 +269,7 @@
         "ci95_high": 0.7670600000000001,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260961,
+        "rng_seed": 20260948,
         "seed_values": {
           "0": 0.7597,
           "1": 0.7662,
@@ -287,7 +287,7 @@
         "ci95_high": 8.999999999999009e-05,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260962,
+        "rng_seed": 20260949,
         "seed_values": {
           "0": -4.999999999999449e-05,
           "1": 0.0,
@@ -305,7 +305,7 @@
         "ci95_high": 0.002950000000000008,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260963,
+        "rng_seed": 20260950,
         "seed_values": {
           "0": 0.0027499999999999747,
           "1": 0.0011499999999999289,
@@ -323,7 +323,7 @@
         "ci95_high": 0.0,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260964,
+        "rng_seed": 20260951,
         "seed_values": {
           "0": 0.0,
           "1": 0.0,
@@ -337,11 +337,11 @@
         "field": "hupd",
         "mean": 0.005919999999999981,
         "sd": 0.0019392653248073179,
-        "ci95_low": 0.004229999999999967,
-        "ci95_high": 0.007239999999999957,
+        "ci95_low": 0.0042999999999999705,
+        "ci95_high": 0.0071899999999999855,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260965,
+        "rng_seed": 20260952,
         "seed_values": {
           "0": 0.006149999999999989,
           "1": 0.005799999999999972,
@@ -357,11 +357,11 @@
         "field": "target_accuracy",
         "mean": 0.634525,
         "sd": 0.0067826294679865975,
-        "ci95_low": 0.6288750000000001,
-        "ci95_high": 0.6397200000000001,
+        "ci95_low": 0.628975,
+        "ci95_high": 0.6390950000000001,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260940,
+        "rng_seed": 20260927,
         "seed_values": {
           "0": 0.62405,
           "1": 0.634225,
@@ -375,11 +375,11 @@
         "field": "target_accuracy",
         "mean": 0.12362499999999998,
         "sd": 0.006291735650835946,
-        "ci95_low": 0.11869,
+        "ci95_low": 0.11879499999999998,
         "ci95_high": 0.12840999999999997,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260941,
+        "rng_seed": 20260928,
         "seed_values": {
           "0": 0.12685000000000002,
           "1": 0.11957499999999999,
@@ -393,11 +393,11 @@
         "field": "target_accuracy",
         "mean": 0.636635,
         "sd": 0.005653278915815129,
-        "ci95_low": 0.6322400000000001,
+        "ci95_low": 0.632305,
         "ci95_high": 0.64128,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260942,
+        "rng_seed": 20260929,
         "seed_values": {
           "0": 0.62895,
           "1": 0.6375,
@@ -415,7 +415,7 @@
         "ci95_high": 0.64428,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260943,
+        "rng_seed": 20260930,
         "seed_values": {
           "0": 0.6315500000000001,
           "1": 0.6368499999999999,
@@ -429,11 +429,11 @@
         "field": "target_accuracy",
         "mean": 0.6366099999999999,
         "sd": 0.005658030797017624,
-        "ci95_low": 0.6322949999999999,
+        "ci95_low": 0.63222,
         "ci95_high": 0.641265,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260944,
+        "rng_seed": 20260931,
         "seed_values": {
           "0": 0.62895,
           "1": 0.6375,
@@ -451,7 +451,7 @@
         "ci95_high": 0.6354050000000001,
         "n_seeds": 5,
         "draws": 10000,
-        "rng_seed": 20260945,
+        "rng_seed": 20260932,
         "seed_values": {
           "0": 0.611875,
           "1": 0.627175,
@@ -478,11 +478,11 @@
     {
       "mean": 0.005919999999999981,
       "sd": 0.0019392653248073179,
-      "ci95_low": 0.004229999999999967,
+      "ci95_low": 0.0042999999999999705,
       "ci95_high": 0.00726,
       "n_seeds": 5,
       "draws": 10000,
-      "rng_seed": 20261020,
+      "rng_seed": 20261007,
       "method": "tent",
       "value": "habs",
       "seed_differences": {
@@ -498,11 +498,11 @@
     {
       "mean": 0.76329,
       "sd": 0.004952827475291278,
-      "ci95_low": 0.75952,
+      "ci95_low": 0.7594399999999999,
       "ci95_high": 0.7670600000000001,
       "n_seeds": 5,
       "draws": 10000,
-      "rng_seed": 20261021,
+      "rng_seed": 20261008,
       "method": "eata",
       "value": "habs",
       "seed_differences": {
@@ -522,7 +522,7 @@
       "ci95_high": 0.002950000000000008,
       "n_seeds": 5,
       "draws": 10000,
-      "rng_seed": 20261022,
+      "rng_seed": 20261009,
       "method": "sar",
       "value": "habs",
       "seed_differences": {
@@ -538,11 +538,11 @@
     {
       "mean": 0.0016099999999999782,
       "sd": 0.0013835642377569926,
-      "ci95_low": 0.0005699999999999484,
+      "ci95_low": 0.0005499999999999727,
       "ci95_high": 0.0027800000000000047,
       "n_seeds": 5,
       "draws": 10000,
-      "rng_seed": 20261023,
+      "rng_seed": 20261010,
       "method": "cotta",
       "value": "habs",
       "seed_differences": {
@@ -562,7 +562,7 @@
       "ci95_high": 8.999999999999009e-05,
       "n_seeds": 5,
       "draws": 10000,
-      "rng_seed": 20261024,
+      "rng_seed": 20261011,
       "method": "rotta",
       "value": "habs",
       "seed_differences": {
@@ -581,7 +581,7 @@
     "EATA shows severe instability under the registered independent reimplementation and fixed-normalization protocol; this is an implementation-sensitive signal, not a universal failure claim."
   ],
   "artifacts": {
-    "raw_status": "<local-run-state>/publication_modern_baselines_v1_status.json",
+    "raw_status": "run_state\\publication_modern_baselines_v1_status.json",
     "rows": "rows.csv"
   }
 }

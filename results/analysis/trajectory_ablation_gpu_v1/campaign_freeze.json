@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "campaign_id": "trajectory_ablation_gpu_v1",
   "status": "FROZEN_PRIMARY_RESULTS",
-  "frozen_at": "2026-09-20T11:57:48.415775+00:00",
-  "status_sha256": "sha256:58cb9fef3ccfb1dea837859b97fecbe77dcdfadeb20ca7422d7b8cbafde39dbd",
+  "frozen_at": "2026-09-21T09:58:23.742387+00:00",
+  "status_sha256": "sha256:44ba01e83eb32cd4f72ba0d0ab1dc266bb175febfd9b3246e0773a3d7896f890",
   "result_root_digest": "sha256:ef45a1c4dad47179e7444deb8ff14036f11a0dee8c47de249ef9f8c0cee10f18",
   "shard_count": 1080,
   "provenance": {
