@@ -1,30 +1,33 @@
 # Return-to-Source Hysteresis in Test-Time Adaptation
 
-This repository contains the public, reproducibility-oriented artifact for:
+[简体中文](README_zh.md)
 
-**Return-to-Source Hysteresis in Test-Time Adaptation: Configuration Effects, Method Stability, and CIFAR-C External Validation**
+A research artifact examining how a model behaves on its first clean, source-like return after an unlabeled test-time adaptation path. The study separates normalization and configuration effects from the incremental contribution of parameter updates, with method-stability analysis and CIFAR-C external validation.
 
-The study measures the first clean source-like return after an unlabeled adaptation path. It separates normalization/configuration effects from the incremental update-induced component and reports a formally negative prospective mechanism screen.
+## Research scope
 
-## Public release boundary
+- Measure return-to-source behavior across adaptation paths and methods.
+- Separate configuration effects from update-induced changes.
+- Compare baseline behavior using pinned upstream provenance.
+- Preserve negative results and failed campaigns.
 
-This repository intentionally excludes raw datasets, model checkpoints, per-job raw outputs, local run logs, virtual environments, private skills, author contact details, author-only submission files, and machine-specific paths. Download the public CIFAR and CIFAR-C datasets from their cited sources and verify them against the manifests in `configs/`.
+The prospective mechanism screen did not support the tested mechanism. Conclusions are bounded by the recorded models, datasets, protocols, and configurations.
 
-The published PDF and TeX source remain anonymous review copies. The repository itself is an authored public artifact: author attribution appears only in `CITATION.cff`, `LICENSE`, and the GitHub account metadata. No email address, ORCID, affiliation, cover letter, title page, or submission credential is included.
+## Repository map
 
-## Evidence included
+| Location | Contents |
+| --- | --- |
+| [configs/](configs/) | Frozen campaigns, dataset provenance, and method contracts |
+| [results/analysis/](results/analysis/) | Derived results, row tables, and artifact manifests |
+| [paper/](paper/) | Manuscript, bibliography, and figures |
+| [docs/](docs/) | Implementation, integrity, claims, and review audits |
+| [tests/](tests/) | Analysis and runtime regression checks |
 
-- Frozen campaign manifests and dataset provenance records.
-- Analysis summaries, derived row tables, and artifact manifests for the formal and expansion campaigns.
-- Figure files used by the manuscript.
-- Reproducibility and integrity audit notes, including negative and failed-campaign boundaries.
-- Source code and tests for the local analysis and experiment runners.
+The root contains experiment runners, supervisors, and analysis scripts. Raw datasets and model checkpoints must be obtained separately from the sources recorded in the manifests.
 
-The analysis summaries are evidence records, not a claim that every campaign can run without downloading the referenced public datasets and installing the locked environment.
+## Environment and tests
 
-## Reproduction
-
-Python 3.13 was used for the recorded analyses. Create a clean environment and install one runtime lock plus the analysis and test locks:
+The recorded analyses used Python 3.13. In PowerShell:
 
 ```powershell
 py -3.13 -m venv .venv
@@ -32,20 +35,16 @@ py -3.13 -m venv .venv
 .\.venv\Scripts\python -m pytest -q
 ```
 
-Use `requirements-cuda-lock.txt` in place of `requirements-lock.txt` for the recorded CUDA 12.8 stack. The formal campaigns require the public CIFAR data, source checkpoints, substantial compute, and the manifests under `configs/`; they are not started by the test suite. `run_expansion_v2_task.ps1` refuses to resume a campaign until its persisted formal-admission record passes.
+For the recorded CUDA 12.8 stack, replace `requirements-lock.txt` with `requirements-cuda-lock.txt`.
 
-## Baseline provenance
+Tests do not start formal campaigns. Full experiments additionally require the referenced datasets, source checkpoints, compute resources, and campaign-admission records.
 
-Modern baseline implementations were independently reimplemented and behavior-audited against pinned upstream references. The repositories, exact commits, file hashes, and licenses are recorded in `configs/modern_baseline_upstreams.json`. Their source code is not redistributed here.
+## Provenance
 
-## Scientific status
+Modern baseline implementations were independently reimplemented and behavior-audited against pinned upstream references. Source commits, file hashes, and licenses are recorded in [modern_baseline_upstreams.json](configs/modern_baseline_upstreams.json).
 
-The current local publication gate remains `PUBLICATION_SUFFICIENCY = FAIL` because venue-specific submission checks and author-controlled metadata remain open. The fresh manuscript claims audit is `PASS`; this does not certify acceptance, a JCR quartile, or a universal leaderboard. The repository preserves negative results, failed campaigns, and all scope limits.
+The manuscript is a research draft. Claim-traceability checks and submission-readiness checks are recorded separately in [docs/](docs/).
 
-## License
+## Citation and license
 
-Original source code and technical documentation are released under the MIT License. The manuscript, figures, tables, and derived scientific result artifacts remain copyright (c) 2026 Yue Yu, all rights reserved pending publication. See `SCIENTIFIC_ARTIFACT_NOTICE.md`; third-party references and datasets remain under their upstream terms in `THIRD_PARTY_NOTICES.md`.
-
-## Citation
-
-See `CITATION.cff` and `paper/references.bib`.
+Use [CITATION.cff](CITATION.cff). Original code and technical documentation use [MIT](LICENSE). Manuscript, figures, tables, and derived scientific results follow [SCIENTIFIC_ARTIFACT_NOTICE.md](SCIENTIFIC_ARTIFACT_NOTICE.md); third-party terms are recorded in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
